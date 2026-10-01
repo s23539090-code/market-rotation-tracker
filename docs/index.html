@@ -135,7 +135,14 @@
   .links-block a { color: var(--series-info); text-decoration: none; }
   .links-block a:hover { text-decoration: underline; }
   footer.cg-attr { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 12.5px; color: var(--text-muted); }
-  footer.cg-attr svg { flex: none; }
+  footer.cg-attr img { height: 18px; width: auto; display: block; }
+  footer.cg-attr img.logo-dark { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) footer.cg-attr img.logo-light { display: none; }
+    :root:where(:not([data-theme="light"])) footer.cg-attr img.logo-dark { display: block; }
+  }
+  :root[data-theme="dark"] footer.cg-attr img.logo-light { display: none; }
+  :root[data-theme="dark"] footer.cg-attr img.logo-dark { display: block; }
 
   .tooltip {
     position: fixed; pointer-events: none; z-index: 20; background: var(--surface-1);
@@ -184,7 +191,8 @@
       <a href="https://docs.coingecko.com?utm_source=x&amp;utm_content=Okada_DeFi0x" target="_blank" rel="noopener">API docs &#8599;</a>
     </div>
     <footer class="cg-attr">
-      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7.3" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/></svg>
+      <img class="logo-light" src="assets/coingecko-api-on-light.svg" alt="CoinGecko API">
+      <img class="logo-dark" src="assets/coingecko-api-on-dark.svg" alt="CoinGecko API">
       Data: CoinGecko API
     </footer>
   </section>
