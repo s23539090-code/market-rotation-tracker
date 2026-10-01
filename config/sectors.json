@@ -1,0 +1,61 @@
+{
+  "_comment": "Edit this file to change which sectors are tracked and how. 'category' must be a CoinGecko category id (run `python run.py check` to validate, or see /coins/categories/list).",
+
+  "benchmarks": {
+    "primary": "ethereum",
+    "secondary": "bitcoin"
+  },
+
+  "universe": {
+    "tokens_per_sector": 40,
+    "min_market_cap_usd": 20000000,
+    "min_volume_24h_usd": 500000,
+    "exclude_categories": ["stablecoins", "wrapped-tokens", "bridged-tokens", "liquid-staking-tokens"],
+    "exclude_ids": ["tether", "usd-coin", "dai", "weth", "wrapped-bitcoin", "staked-ether", "wrapped-steth"]
+  },
+
+  "sectors": [
+    { "key": "ai",     "label": "AI",       "category": "artificial-intelligence" },
+    { "key": "defi",   "label": "DeFi",     "category": "decentralized-finance-defi" },
+    { "key": "rwa",    "label": "RWA",      "category": "real-world-assets-rwa" },
+    { "key": "meme",   "label": "Memes",    "category": "meme-token" },
+    { "key": "l1",     "label": "Layer 1",  "category": "layer-1" },
+    { "key": "l2",     "label": "Layer 2",  "category": "layer-2" },
+    { "key": "gaming", "label": "Gaming",   "category": "gaming" },
+    { "key": "depin",  "label": "DePIN",    "category": "depin" }
+  ],
+
+  "onchain": {
+    "enabled": true,
+    "tokens_per_sector": 3,
+    "min_trade_usd": 500,
+    "holders": true,
+    "platform_to_network": {
+      "ethereum": "eth",
+      "base": "base",
+      "binance-smart-chain": "bsc",
+      "arbitrum-one": "arbitrum",
+      "solana": "solana",
+      "polygon-pos": "polygon_pos",
+      "optimistic-ethereum": "optimism",
+      "avalanche": "avax"
+    },
+    "holders_networks": ["eth", "base", "bsc", "arbitrum", "solana", "polygon_pos", "optimism", "avax"]
+  },
+
+  "score_weights": {
+    "momentum_7d": 0.30,
+    "breadth_7d": 0.25,
+    "excess_24h": 0.15,
+    "volume_surge": 0.10,
+    "dex_buy_share": 0.15,
+    "holder_growth": 0.05
+  },
+
+  "alerts": {
+    "breadth_jump_pts": 25,
+    "volume_surge_ratio": 1.5
+  },
+
+  "history_days": 30
+}

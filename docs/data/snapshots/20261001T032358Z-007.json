@@ -1,0 +1,1407 @@
+{
+  "alerts": [
+    {
+      "from": "Improving",
+      "label": "AI",
+      "message": "AI: Improving \u2192 Lagging",
+      "sector": "ai",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -72.2,
+      "label": "AI",
+      "message": "AI: breadth dropped 72 pts (100% \u2192 28%)",
+      "sector": "ai",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "DeFi",
+      "message": "DeFi: Improving \u2192 Lagging",
+      "sector": "defi",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -83.3,
+      "label": "DeFi",
+      "message": "DeFi: breadth dropped 83 pts (94% \u2192 11%)",
+      "sector": "defi",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "RWA",
+      "message": "RWA: Improving \u2192 Lagging",
+      "sector": "rwa",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -61.1,
+      "label": "RWA",
+      "message": "RWA: breadth dropped 61 pts (100% \u2192 39%)",
+      "sector": "rwa",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "Memes",
+      "message": "Memes: Improving \u2192 Lagging",
+      "sector": "meme",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -94.4,
+      "label": "Memes",
+      "message": "Memes: breadth dropped 94 pts (94% \u2192 0%)",
+      "sector": "meme",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "Layer 1",
+      "message": "Layer 1: Improving \u2192 Lagging",
+      "sector": "l1",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -88.9,
+      "label": "Layer 1",
+      "message": "Layer 1: breadth dropped 89 pts (89% \u2192 0%)",
+      "sector": "l1",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "Layer 2",
+      "message": "Layer 2: Improving \u2192 Lagging",
+      "sector": "l2",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -83.3,
+      "label": "Layer 2",
+      "message": "Layer 2: breadth dropped 83 pts (94% \u2192 11%)",
+      "sector": "l2",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "Gaming",
+      "message": "Gaming: Improving \u2192 Lagging",
+      "sector": "gaming",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -83.3,
+      "label": "Gaming",
+      "message": "Gaming: breadth dropped 83 pts (89% \u2192 6%)",
+      "sector": "gaming",
+      "type": "breadth_jump"
+    },
+    {
+      "from": "Improving",
+      "label": "DePIN",
+      "message": "DePIN: Improving \u2192 Lagging",
+      "sector": "depin",
+      "to": "Lagging",
+      "type": "quadrant_change"
+    },
+    {
+      "delta": -77.8,
+      "label": "DePIN",
+      "message": "DePIN: breadth dropped 78 pts (100% \u2192 22%)",
+      "sector": "depin",
+      "type": "breadth_jump"
+    }
+  ],
+  "benchmark": {
+    "primary": "ethereum",
+    "r24h": -0.6357026241694781,
+    "r30d": 11.190266481582448,
+    "r7d": 3.1232848537681264
+  },
+  "credits_used": 58,
+  "generated_at": "2026-10-01T03:23:58Z",
+  "sectors": {
+    "ai": {
+      "breadth_24h": 94.44444444444444,
+      "breadth_30d": 16.666666666666668,
+      "breadth_7d": 27.77777777777778,
+      "category": "artificial-intelligence",
+      "excess_24h": 1.2256492309433469,
+      "excess_30d": -4.532487329992683,
+      "excess_7d": -1.5702624696754164,
+      "key": "ai",
+      "label": "AI",
+      "laggards": [
+        {
+          "id": "artificial-intelligence-token-6",
+          "name": "Artificial-Intelligence Token 6",
+          "r7d": -3.233759418342828,
+          "symbol": "T6AR"
+        },
+        {
+          "id": "artificial-intelligence-token-8",
+          "name": "Artificial-Intelligence Token 8",
+          "r7d": -2.1426798683050787,
+          "symbol": "T8AR"
+        },
+        {
+          "id": "artificial-intelligence-token-2",
+          "name": "Artificial-Intelligence Token 2",
+          "r7d": -1.3480457950079074,
+          "symbol": "T2AR"
+        }
+      ],
+      "market_cap": 58998936707.58231,
+      "momentum": -1.5702624696754164,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 39.9,
+        "holder_growth_7d": -1.46,
+        "tokens": [
+          {
+            "buy_share": 10.4,
+            "buys_24h": 68,
+            "holder_growth_7d": 0.15,
+            "holders_7d_ago": 49419,
+            "holders_now": 49494,
+            "id": "artificial-intelligence-token-5",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 1990188.8779535033,
+            "reserve_usd": 829271.270749673,
+            "sells_24h": 588,
+            "symbol": "T5AR"
+          },
+          {
+            "buy_share": 39.7,
+            "buys_24h": 411,
+            "holder_growth_7d": -0.06,
+            "holders_7d_ago": 22071,
+            "holders_now": 22057,
+            "id": "artificial-intelligence-token-3",
+            "network": "solana",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 167790.30283384805,
+            "reserve_usd": 43567255.143163055,
+            "sells_24h": 623,
+            "symbol": "T3AR"
+          },
+          {
+            "buy_share": 69.5,
+            "buys_24h": 837,
+            "holder_growth_7d": -4.46,
+            "holders_7d_ago": 9257,
+            "holders_now": 8844,
+            "id": "artificial-intelligence-token-10",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 38013.935975262626,
+            "reserve_usd": 34154906.45474153,
+            "sells_24h": 368,
+            "symbol": "T10AR"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": 0.9522725763305083,
+      "ret_24h_median": 0.5899466067738688,
+      "ret_30d_capw": 5.5430259226592415,
+      "ret_30d_median": 6.657779151589765,
+      "ret_7d_capw": 1.7741712289414535,
+      "ret_7d_median": 1.55302238409271,
+      "score": 66.4,
+      "score_parts": {
+        "breadth_7d": 85.7,
+        "dex_buy_share": 14.3,
+        "excess_24h": 85.7,
+        "holder_growth": 0.0,
+        "momentum_7d": 85.7,
+        "volume_surge": 42.9
+      },
+      "top_movers": [
+        {
+          "id": "artificial-intelligence-token-5",
+          "image": "",
+          "market_cap": 5978089718.28263,
+          "name": "Artificial-Intelligence Token 5",
+          "r24h": 2.459711147682912,
+          "r30d": -3.060860495906252,
+          "r7d": 5.625353466278453,
+          "symbol": "T5AR",
+          "volume": 36163807.225509636
+        },
+        {
+          "id": "artificial-intelligence-token-3",
+          "image": "",
+          "market_cap": 6566081458.053128,
+          "name": "Artificial-Intelligence Token 3",
+          "r24h": -0.3427371914749291,
+          "r30d": 14.401610550390194,
+          "r7d": 5.01982525838034,
+          "symbol": "T3AR",
+          "volume": 358161027.36554915
+        },
+        {
+          "id": "artificial-intelligence-token-10",
+          "image": "",
+          "market_cap": 4580478986.103545,
+          "name": "Artificial-Intelligence Token 10",
+          "r24h": 2.9274794339606904,
+          "r30d": 14.080836601889406,
+          "r7d": 4.817303409994876,
+          "symbol": "T10AR",
+          "volume": 99951484.45543051
+        },
+        {
+          "id": "artificial-intelligence-token-15",
+          "image": "",
+          "market_cap": 1355296951.2132556,
+          "name": "Artificial-Intelligence Token 15",
+          "r24h": 0.5242508436437453,
+          "r30d": 6.751198878600476,
+          "r7d": 4.501285722599291,
+          "symbol": "T15AR",
+          "volume": 101921519.79452014
+        },
+        {
+          "id": "artificial-intelligence-token-11",
+          "image": "",
+          "market_cap": 4076534249.8818884,
+          "name": "Artificial-Intelligence Token 11",
+          "r24h": 2.390771684454137,
+          "r30d": 2.523326338741681,
+          "r7d": 4.106186088791187,
+          "symbol": "T11AR",
+          "volume": 231689650.283336
+        }
+      ],
+      "trend": -4.532487329992683,
+      "turnover": 0.05337003027542336,
+      "volume_24h": 3148775038.3014545,
+      "volume_surge": 0.9254438835755703
+    },
+    "defi": {
+      "breadth_24h": 61.111111111111114,
+      "breadth_30d": 5.555555555555555,
+      "breadth_7d": 11.11111111111111,
+      "category": "decentralized-finance-defi",
+      "excess_24h": 0.4006420576032349,
+      "excess_30d": -7.770587951119969,
+      "excess_7d": -2.4216092168962104,
+      "key": "defi",
+      "label": "DeFi",
+      "laggards": [
+        {
+          "id": "decentralized-finance-defi-token-9",
+          "name": "Decentralized-Finance-Defi Token 9",
+          "r7d": -3.477748622746634,
+          "symbol": "T9DE"
+        },
+        {
+          "id": "decentralized-finance-defi-token-4",
+          "name": "Decentralized-Finance-Defi Token 4",
+          "r7d": -2.6899371266759955,
+          "symbol": "T4DE"
+        },
+        {
+          "id": "decentralized-finance-defi-token-11",
+          "name": "Decentralized-Finance-Defi Token 11",
+          "r7d": -2.335221001191793,
+          "symbol": "T11DE"
+        }
+      ],
+      "market_cap": 68171893382.045334,
+      "momentum": -2.4216092168962104,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 33.0,
+        "holder_growth_7d": 0.88,
+        "tokens": [
+          {
+            "buy_share": 24.9,
+            "buys_24h": 298,
+            "holder_growth_7d": 4.1,
+            "holders_7d_ago": 22027,
+            "holders_now": 22931,
+            "id": "decentralized-finance-defi-token-1",
+            "network": "base",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 926826.5941520819,
+            "reserve_usd": 6962885.948017718,
+            "sells_24h": 900,
+            "symbol": "T1DE"
+          },
+          {
+            "buy_share": 16.4,
+            "buys_24h": 138,
+            "holder_growth_7d": -0.18,
+            "holders_7d_ago": 44475,
+            "holders_now": 44395,
+            "id": "decentralized-finance-defi-token-12",
+            "network": "bsc",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3949038.7952227443,
+            "reserve_usd": 5691856.896213543,
+            "sells_24h": 705,
+            "symbol": "T12DE"
+          },
+          {
+            "buy_share": 57.6,
+            "buys_24h": 820,
+            "holder_growth_7d": -1.29,
+            "holders_7d_ago": 32600,
+            "holders_now": 32180,
+            "id": "decentralized-finance-defi-token-2",
+            "network": "bsc",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 71385.19622219863,
+            "reserve_usd": 12827907.23105927,
+            "sells_24h": 604,
+            "symbol": "T2DE"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": 0.15714743167727954,
+      "ret_24h_median": -0.2350605665662432,
+      "ret_30d_capw": 2.493197604725787,
+      "ret_30d_median": 3.4196785304624786,
+      "ret_7d_capw": 0.7395103367451842,
+      "ret_7d_median": 0.7016756368719161,
+      "score": 46.1,
+      "score_parts": {
+        "breadth_7d": 50.0,
+        "dex_buy_share": 0.0,
+        "excess_24h": 28.6,
+        "holder_growth": 71.4,
+        "momentum_7d": 57.1,
+        "volume_surge": 85.7
+      },
+      "top_movers": [
+        {
+          "id": "decentralized-finance-defi-token-1",
+          "image": "",
+          "market_cap": 5961132099.587312,
+          "name": "Decentralized-Finance-Defi Token 1",
+          "r24h": 1.0084211119062112,
+          "r30d": -4.9906405327672205,
+          "r7d": 3.4541648715255855,
+          "symbol": "T1DE",
+          "volume": 334993403.35948694
+        },
+        {
+          "id": "decentralized-finance-defi-token-12",
+          "image": "",
+          "market_cap": 682635410.7772133,
+          "name": "Decentralized-Finance-Defi Token 12",
+          "r24h": -2.232898874790714,
+          "r30d": 0.04091274359545638,
+          "r7d": 3.2082892956103475,
+          "symbol": "T12DE",
+          "volume": 246532550.5961706
+        },
+        {
+          "id": "decentralized-finance-defi-token-2",
+          "image": "",
+          "market_cap": 7141170425.836596,
+          "name": "Decentralized-Finance-Defi Token 2",
+          "r24h": 1.917590602188651,
+          "r30d": -6.048988544603636,
+          "r7d": 1.5826096754458197,
+          "symbol": "T2DE",
+          "volume": 69774003.69877131
+        },
+        {
+          "id": "decentralized-finance-defi-token-13",
+          "image": "",
+          "market_cap": 1019143529.3282222,
+          "name": "Decentralized-Finance-Defi Token 13",
+          "r24h": -0.0616603735124196,
+          "r30d": 10.983776504048434,
+          "r7d": 1.5451642444934748,
+          "symbol": "T13DE",
+          "volume": 161369324.33146915
+        },
+        {
+          "id": "decentralized-finance-defi-token-5",
+          "image": "",
+          "market_cap": 4408215945.10137,
+          "name": "Decentralized-Finance-Defi Token 5",
+          "r24h": -0.7917602410780554,
+          "r30d": 4.973463522484661,
+          "r7d": 1.463138738302472,
+          "symbol": "T5DE",
+          "volume": 61698968.806108534
+        }
+      ],
+      "trend": -7.770587951119969,
+      "turnover": 0.05368383393868814,
+      "volume_24h": 3659728603.6076746,
+      "volume_surge": 1.061888915058668
+    },
+    "depin": {
+      "breadth_24h": 72.22222222222223,
+      "breadth_30d": 5.555555555555555,
+      "breadth_7d": 22.22222222222222,
+      "category": "depin",
+      "excess_24h": 0.9536481565844914,
+      "excess_30d": -5.952126402522129,
+      "excess_7d": -2.222887477130305,
+      "key": "depin",
+      "label": "DePIN",
+      "laggards": [
+        {
+          "id": "depin-token-16",
+          "name": "Depin Token 16",
+          "r7d": -4.512861312435766,
+          "symbol": "T16DE"
+        },
+        {
+          "id": "depin-token-17",
+          "name": "Depin Token 17",
+          "r7d": -4.278736555273968,
+          "symbol": "T17DE"
+        },
+        {
+          "id": "depin-token-12",
+          "name": "Depin Token 12",
+          "r7d": -2.2350751046996598,
+          "symbol": "T12DE"
+        }
+      ],
+      "market_cap": 77142455586.52367,
+      "momentum": -2.222887477130305,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 57.2,
+        "holder_growth_7d": -1.3,
+        "tokens": [
+          {
+            "buy_share": 80.6,
+            "buys_24h": 278,
+            "holder_growth_7d": -4.67,
+            "holders_7d_ago": 20418,
+            "holders_now": 19464,
+            "id": "depin-token-0",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3605344.895142863,
+            "reserve_usd": 49163161.787629545,
+            "sells_24h": 67,
+            "symbol": "T0DE"
+          },
+          {
+            "buy_share": 34.3,
+            "buys_24h": 198,
+            "holder_growth_7d": 1.86,
+            "holders_7d_ago": 9855,
+            "holders_now": 10038,
+            "id": "depin-token-2",
+            "network": "bsc",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3607678.223158204,
+            "reserve_usd": 9755067.673710672,
+            "sells_24h": 380,
+            "symbol": "T2DE"
+          },
+          {
+            "buy_share": 56.6,
+            "buys_24h": 627,
+            "holder_growth_7d": -1.1,
+            "holders_7d_ago": 14396,
+            "holders_now": 14238,
+            "id": "depin-token-14",
+            "network": "arbitrum",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3893257.2801883174,
+            "reserve_usd": 13870074.807741236,
+            "sells_24h": 480,
+            "symbol": "T14DE"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": 0.40122138462459045,
+      "ret_24h_median": 0.31794553241501333,
+      "ret_30d_capw": 3.7958691195819076,
+      "ret_30d_median": 5.238140079060319,
+      "ret_7d_capw": 0.7505983229704734,
+      "ret_7d_median": 0.9003973766378215,
+      "score": 58.6,
+      "score_parts": {
+        "breadth_7d": 71.4,
+        "dex_buy_share": 57.1,
+        "excess_24h": 57.1,
+        "holder_growth": 14.3,
+        "momentum_7d": 71.4,
+        "volume_surge": 14.3
+      },
+      "top_movers": [
+        {
+          "id": "depin-token-0",
+          "image": "",
+          "market_cap": 6378256142.1526,
+          "name": "Depin Token 0",
+          "r24h": 0.19628906470865515,
+          "r30d": 1.3157682864887654,
+          "r7d": 4.833324441494318,
+          "symbol": "T0DE",
+          "volume": 336724010.43006796
+        },
+        {
+          "id": "depin-token-2",
+          "image": "",
+          "market_cap": 442285626.9214126,
+          "name": "Depin Token 2",
+          "r24h": -0.35260569397678687,
+          "r30d": 6.458082705086497,
+          "r7d": 3.7021999368703886,
+          "symbol": "T2DE",
+          "volume": 169811014.920187
+        },
+        {
+          "id": "depin-token-14",
+          "image": "",
+          "market_cap": 5554108309.844029,
+          "name": "Depin Token 14",
+          "r24h": 1.9159797035958122,
+          "r30d": -10.080306651018025,
+          "r7d": 3.5609682358863695,
+          "symbol": "T14DE",
+          "volume": 269883621.312041
+        },
+        {
+          "id": "depin-token-10",
+          "image": "",
+          "market_cap": 4935374535.104116,
+          "name": "Depin Token 10",
+          "r24h": -0.8237845157691193,
+          "r30d": 11.293448423428913,
+          "r7d": 3.407724197388591,
+          "symbol": "T10DE",
+          "volume": 128149827.26063126
+        },
+        {
+          "id": "depin-token-9",
+          "image": "",
+          "market_cap": 4475501736.913113,
+          "name": "Depin Token 9",
+          "r24h": 0.2606064772858089,
+          "r30d": -4.470940048339175,
+          "r7d": 3.042709294992348,
+          "symbol": "T9DE",
+          "volume": 184484645.30204207
+        }
+      ],
+      "trend": -5.952126402522129,
+      "turnover": 0.03821461810374403,
+      "volume_24h": 2947969479.824037,
+      "volume_surge": 0.7956033446902235
+    },
+    "gaming": {
+      "breadth_24h": 72.22222222222223,
+      "breadth_30d": 0.0,
+      "breadth_7d": 5.555555555555555,
+      "category": "gaming",
+      "excess_24h": 0.8251359675081515,
+      "excess_30d": -12.983697982093348,
+      "excess_7d": -2.871331919392332,
+      "key": "gaming",
+      "label": "Gaming",
+      "laggards": [
+        {
+          "id": "gaming-token-9",
+          "name": "Gaming Token 9",
+          "r7d": -4.258341078952332,
+          "symbol": "T9GA"
+        },
+        {
+          "id": "gaming-token-4",
+          "name": "Gaming Token 4",
+          "r7d": -3.2861882956312356,
+          "symbol": "T4GA"
+        },
+        {
+          "id": "gaming-token-12",
+          "name": "Gaming Token 12",
+          "r7d": -2.6489732363697653,
+          "symbol": "T12GA"
+        }
+      ],
+      "market_cap": 61044297024.604126,
+      "momentum": -2.871331919392332,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 43.6,
+        "holder_growth_7d": 7.28,
+        "tokens": [
+          {
+            "buy_share": 65.0,
+            "buys_24h": 855,
+            "holder_growth_7d": 6.62,
+            "holders_7d_ago": 44214,
+            "holders_now": 47143,
+            "id": "gaming-token-5",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 635857.8987985776,
+            "reserve_usd": 7585224.458658693,
+            "sells_24h": 460,
+            "symbol": "T5GA"
+          },
+          {
+            "buy_share": 17.8,
+            "buys_24h": 161,
+            "holder_growth_7d": 7.63,
+            "holders_7d_ago": 20663,
+            "holders_now": 22239,
+            "id": "gaming-token-8",
+            "network": "solana",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 396036.71726669784,
+            "reserve_usd": 33204558.61774735,
+            "sells_24h": 742,
+            "symbol": "T8GA"
+          },
+          {
+            "buy_share": 47.9,
+            "buys_24h": 226,
+            "holder_growth_7d": 7.58,
+            "holders_7d_ago": 27849,
+            "holders_now": 29960,
+            "id": "gaming-token-1",
+            "network": "base",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 2947366.6839369982,
+            "reserve_usd": 22334199.32169432,
+            "sells_24h": 246,
+            "symbol": "T1GA"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": 0.22462908370838067,
+      "ret_24h_median": 0.18943334333867345,
+      "ret_30d_capw": -2.09565919442897,
+      "ret_30d_median": -1.7934315005109005,
+      "ret_7d_capw": -0.5545760182595445,
+      "ret_7d_median": 0.25195293437579425,
+      "score": 45.7,
+      "score_parts": {
+        "breadth_7d": 28.6,
+        "dex_buy_share": 28.6,
+        "excess_24h": 42.9,
+        "holder_growth": 100.0,
+        "momentum_7d": 42.9,
+        "volume_surge": 100.0
+      },
+      "top_movers": [
+        {
+          "id": "gaming-token-5",
+          "image": "",
+          "market_cap": 393579162.9080661,
+          "name": "Gaming Token 5",
+          "r24h": 0.8385936973988074,
+          "r30d": -2.162798246047076,
+          "r7d": 3.4610421467148504,
+          "symbol": "T5GA",
+          "volume": 244349301.72507167
+        },
+        {
+          "id": "gaming-token-8",
+          "image": "",
+          "market_cap": 4986205786.133595,
+          "name": "Gaming Token 8",
+          "r24h": 0.6482533318542752,
+          "r30d": -0.31320369679186966,
+          "r7d": 2.9348436603040122,
+          "symbol": "T8GA",
+          "volume": 292230204.3034251
+        },
+        {
+          "id": "gaming-token-1",
+          "image": "",
+          "market_cap": 7843297963.304889,
+          "name": "Gaming Token 1",
+          "r24h": -0.8925001905016671,
+          "r30d": 4.13073693549026,
+          "r7d": 2.7636283199797895,
+          "symbol": "T1GA",
+          "volume": 100951961.37508647
+        },
+        {
+          "id": "gaming-token-7",
+          "image": "",
+          "market_cap": 964651712.6374977,
+          "name": "Gaming Token 7",
+          "r24h": 1.539627947080873,
+          "r30d": -9.356877874338295,
+          "r7d": 2.345745468730716,
+          "symbol": "T7GA",
+          "volume": 231189963.80797845
+        },
+        {
+          "id": "gaming-token-14",
+          "image": "",
+          "market_cap": 1544905516.9123888,
+          "name": "Gaming Token 14",
+          "r24h": -0.28155379212551745,
+          "r30d": -6.529863811399221,
+          "r7d": 1.6865656611788242,
+          "symbol": "T14GA",
+          "volume": 348596871.6318208
+        }
+      ],
+      "trend": -12.983697982093348,
+      "turnover": 0.07162976152107713,
+      "volume_24h": 4372588438.094192,
+      "volume_surge": 1.3474358669204596
+    },
+    "l1": {
+      "breadth_24h": 88.88888888888889,
+      "breadth_30d": 0.0,
+      "breadth_7d": 0.0,
+      "category": "layer-1",
+      "excess_24h": 1.1372027700987015,
+      "excess_30d": -11.558467325111486,
+      "excess_7d": -3.0894203483376654,
+      "key": "l1",
+      "label": "Layer 1",
+      "laggards": [
+        {
+          "id": "layer-1-token-15",
+          "name": "Layer-1 Token 15",
+          "r7d": -2.625293695155062,
+          "symbol": "T15LA"
+        },
+        {
+          "id": "layer-1-token-3",
+          "name": "Layer-1 Token 3",
+          "r7d": -2.022271687304811,
+          "symbol": "T3LA"
+        },
+        {
+          "id": "layer-1-token-14",
+          "name": "Layer-1 Token 14",
+          "r7d": -1.8986550760113898,
+          "symbol": "T14LA"
+        }
+      ],
+      "market_cap": 81508498151.25781,
+      "momentum": -3.0894203483376654,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 69.6,
+        "holder_growth_7d": 0.84,
+        "tokens": [
+          {
+            "buy_share": 91.5,
+            "buys_24h": 724,
+            "holder_growth_7d": 7.57,
+            "holders_7d_ago": 27571,
+            "holders_now": 29657,
+            "id": "layer-1-token-12",
+            "network": "bsc",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 265909.69932125247,
+            "reserve_usd": 30354629.43682946,
+            "sells_24h": 67,
+            "symbol": "T12LA"
+          },
+          {
+            "buy_share": 82.3,
+            "buys_24h": 890,
+            "holder_growth_7d": -3.87,
+            "holders_7d_ago": 27966,
+            "holders_now": 26884,
+            "id": "layer-1-token-7",
+            "network": "bsc",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 527805.5755556293,
+            "reserve_usd": 36054176.08259873,
+            "sells_24h": 191,
+            "symbol": "T7LA"
+          },
+          {
+            "buy_share": 34.9,
+            "buys_24h": 313,
+            "holder_growth_7d": -1.19,
+            "holders_7d_ago": 45167,
+            "holders_now": 44629,
+            "id": "layer-1-token-0",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 866536.4624670038,
+            "reserve_usd": 42949404.15795747,
+            "sells_24h": 584,
+            "symbol": "T0LA"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": 0.4842818187055954,
+      "ret_24h_median": 0.5015001459292235,
+      "ret_30d_capw": 1.4121746503435846,
+      "ret_30d_median": -0.36820084352903826,
+      "ret_7d_capw": 0.38905549682811985,
+      "ret_7d_median": 0.03386450543046088,
+      "score": 36.4,
+      "score_parts": {
+        "breadth_7d": 7.1,
+        "dex_buy_share": 85.7,
+        "excess_24h": 71.4,
+        "holder_growth": 50.0,
+        "momentum_7d": 28.6,
+        "volume_surge": 0.0
+      },
+      "top_movers": [
+        {
+          "id": "layer-1-token-12",
+          "image": "",
+          "market_cap": 7978723115.614833,
+          "name": "Layer-1 Token 12",
+          "r24h": -0.09785081630617393,
+          "r30d": -3.471613037351508,
+          "r7d": 2.9806579242773923,
+          "symbol": "T12LA",
+          "volume": 185667244.28562364
+        },
+        {
+          "id": "layer-1-token-7",
+          "image": "",
+          "market_cap": 6834493116.214929,
+          "name": "Layer-1 Token 7",
+          "r24h": -1.1073947488676252,
+          "r30d": 2.3075093889768112,
+          "r7d": 2.7100248989256746,
+          "symbol": "T7LA",
+          "volume": 184448732.68245348
+        },
+        {
+          "id": "layer-1-token-0",
+          "image": "",
+          "market_cap": 3259601642.962781,
+          "name": "Layer-1 Token 0",
+          "r24h": -0.38459025019669774,
+          "r30d": -3.4615691532372943,
+          "r7d": 2.6804519658993406,
+          "symbol": "T0LA",
+          "volume": 291083191.1137308
+        },
+        {
+          "id": "layer-1-token-10",
+          "image": "",
+          "market_cap": 5092946537.270262,
+          "name": "Layer-1 Token 10",
+          "r24h": -0.19333357199201706,
+          "r30d": -0.5829029934847454,
+          "r7d": 2.6237320792406327,
+          "symbol": "T10LA",
+          "volume": 375716186.51432407
+        },
+        {
+          "id": "layer-1-token-5",
+          "image": "",
+          "market_cap": 1803192162.1354094,
+          "name": "Layer-1 Token 5",
+          "r24h": 1.7465989482336748,
+          "r30d": 3.0450094550018143,
+          "r7d": 2.2023776922915577,
+          "symbol": "T5LA",
+          "volume": 8145439.966572059
+        }
+      ],
+      "trend": -11.558467325111486,
+      "turnover": 0.036898895276053424,
+      "volume_24h": 3007573537.391656,
+      "volume_surge": 0.6327420252170611
+    },
+    "l2": {
+      "breadth_24h": 44.44444444444444,
+      "breadth_30d": 0.0,
+      "breadth_7d": 11.11111111111111,
+      "category": "layer-2",
+      "excess_24h": -0.14099469843957313,
+      "excess_30d": -11.05406369454853,
+      "excess_7d": -4.646193911422702,
+      "key": "l2",
+      "label": "Layer 2",
+      "laggards": [
+        {
+          "id": "layer-2-token-1",
+          "name": "Layer-2 Token 1",
+          "r7d": -5.412544519917186,
+          "symbol": "T1LA"
+        },
+        {
+          "id": "layer-2-token-4",
+          "name": "Layer-2 Token 4",
+          "r7d": -4.2322881823990155,
+          "symbol": "T4LA"
+        },
+        {
+          "id": "layer-2-token-0",
+          "name": "Layer-2 Token 0",
+          "r7d": -3.9022242318416698,
+          "symbol": "T0LA"
+        }
+      ],
+      "market_cap": 76333593403.62689,
+      "momentum": -4.646193911422702,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 45.9,
+        "holder_growth_7d": 0.09,
+        "tokens": [
+          {
+            "buy_share": 64.6,
+            "buys_24h": 208,
+            "holder_growth_7d": -2.02,
+            "holders_7d_ago": 24652,
+            "holders_now": 24154,
+            "id": "layer-2-token-14",
+            "network": "arbitrum",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3240580.241610769,
+            "reserve_usd": 38306458.16895721,
+            "sells_24h": 114,
+            "symbol": "T14LA"
+          },
+          {
+            "buy_share": 32.3,
+            "buys_24h": 189,
+            "holder_growth_7d": 2.6,
+            "holders_7d_ago": 20051,
+            "holders_now": 20573,
+            "id": "layer-2-token-2",
+            "network": "bsc",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 4454778.395780957,
+            "reserve_usd": 1161278.5839465833,
+            "sells_24h": 397,
+            "symbol": "T2LA"
+          },
+          {
+            "buy_share": 40.9,
+            "buys_24h": 536,
+            "holder_growth_7d": -0.31,
+            "holders_7d_ago": 9261,
+            "holders_now": 9232,
+            "id": "layer-2-token-16",
+            "network": "base",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 1867769.862064628,
+            "reserve_usd": 20881412.53851789,
+            "sells_24h": 775,
+            "symbol": "T16LA"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": -0.4979545373538452,
+      "ret_24h_median": -0.7766973226090512,
+      "ret_30d_capw": -2.2857731775075596,
+      "ret_30d_median": 0.13620278703391808,
+      "ret_7d_capw": 0.5213932103562446,
+      "ret_7d_median": -1.5229090576545754,
+      "score": 32.5,
+      "score_parts": {
+        "breadth_7d": 50.0,
+        "dex_buy_share": 42.9,
+        "excess_24h": 14.3,
+        "holder_growth": 28.6,
+        "momentum_7d": 14.3,
+        "volume_surge": 57.1
+      },
+      "top_movers": [
+        {
+          "id": "layer-2-token-14",
+          "image": "",
+          "market_cap": 7168671911.146815,
+          "name": "Layer-2 Token 14",
+          "r24h": 1.1174449009066096,
+          "r30d": -6.003959779692158,
+          "r7d": 4.9925081329335645,
+          "symbol": "T14LA",
+          "volume": 37052654.21007514
+        },
+        {
+          "id": "layer-2-token-2",
+          "image": "",
+          "market_cap": 7480841108.795365,
+          "name": "Layer-2 Token 2",
+          "r24h": -0.8552298858596363,
+          "r30d": -7.150365708301121,
+          "r7d": 3.8893924637678836,
+          "symbol": "T2LA",
+          "volume": 38293085.27576782
+        },
+        {
+          "id": "layer-2-token-16",
+          "image": "",
+          "market_cap": 5962457473.550103,
+          "name": "Layer-2 Token 16",
+          "r24h": 0.14055720630171703,
+          "r30d": 0.0649729527870011,
+          "r7d": 2.934254098864899,
+          "symbol": "T16LA",
+          "volume": 304714253.43478084
+        },
+        {
+          "id": "layer-2-token-12",
+          "image": "",
+          "market_cap": 6305515364.409109,
+          "name": "Layer-2 Token 12",
+          "r24h": -1.513619002169757,
+          "r30d": -11.553597357032526,
+          "r7d": 2.1344143122660713,
+          "symbol": "T12LA",
+          "volume": 210104362.86951953
+        },
+        {
+          "id": "layer-2-token-17",
+          "image": "",
+          "market_cap": 7176698613.264932,
+          "name": "Layer-2 Token 17",
+          "r24h": 0.19785253059165386,
+          "r30d": 0.6320339833183837,
+          "r7d": 2.0393479521503313,
+          "symbol": "T17LA",
+          "volume": 354594631.7039063
+        }
+      ],
+      "trend": -11.05406369454853,
+      "turnover": 0.05134746085443933,
+      "volume_24h": 3919536199.17142,
+      "volume_surge": 0.9329493856452866
+    },
+    "meme": {
+      "breadth_24h": 27.77777777777778,
+      "breadth_30d": 0.0,
+      "breadth_7d": 0.0,
+      "category": "meme-token",
+      "excess_24h": -0.6401419406297388,
+      "excess_30d": -15.888471948532215,
+      "excess_7d": -5.526340735898152,
+      "key": "meme",
+      "label": "Memes",
+      "laggards": [
+        {
+          "id": "meme-token-token-3",
+          "name": "Meme-Token Token 3",
+          "r7d": -6.326403443167822,
+          "symbol": "T3ME"
+        },
+        {
+          "id": "meme-token-token-4",
+          "name": "Meme-Token Token 4",
+          "r7d": -5.376383745371926,
+          "symbol": "T4ME"
+        },
+        {
+          "id": "meme-token-token-9",
+          "name": "Meme-Token Token 9",
+          "r7d": -5.017014700864804,
+          "symbol": "T9ME"
+        }
+      ],
+      "market_cap": 85361317991.89786,
+      "momentum": -5.526340735898152,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 74.8,
+        "holder_growth_7d": 5.61,
+        "tokens": [
+          {
+            "buy_share": 91.6,
+            "buys_24h": 710,
+            "holder_growth_7d": 2.8,
+            "holders_7d_ago": 45049,
+            "holders_now": 46312,
+            "id": "meme-token-token-0",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 2301860.589981252,
+            "reserve_usd": 43593405.785902284,
+            "sells_24h": 65,
+            "symbol": "T0ME"
+          },
+          {
+            "buy_share": 76.4,
+            "buys_24h": 573,
+            "holder_growth_7d": 6.97,
+            "holders_7d_ago": 28293,
+            "holders_now": 30266,
+            "id": "meme-token-token-6",
+            "network": "base",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3242778.97647746,
+            "reserve_usd": 19550332.458336063,
+            "sells_24h": 177,
+            "symbol": "T6ME"
+          },
+          {
+            "buy_share": 56.5,
+            "buys_24h": 809,
+            "holder_growth_7d": 7.06,
+            "holders_7d_ago": 38973,
+            "holders_now": 41723,
+            "id": "meme-token-token-1",
+            "network": "base",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 612445.1456708132,
+            "reserve_usd": 47687898.446068846,
+            "sells_24h": 623,
+            "symbol": "T1ME"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": -1.2761086559217705,
+      "ret_24h_median": -1.275844564799217,
+      "ret_30d_capw": -4.731322205809684,
+      "ret_30d_median": -4.6982054669497675,
+      "ret_7d_capw": -2.826284265136716,
+      "ret_7d_median": -2.403055882130025,
+      "score": 28.2,
+      "score_parts": {
+        "breadth_7d": 7.1,
+        "dex_buy_share": 100.0,
+        "excess_24h": 0.0,
+        "holder_growth": 85.7,
+        "momentum_7d": 0.0,
+        "volume_surge": 71.4
+      },
+      "top_movers": [
+        {
+          "id": "meme-token-token-0",
+          "image": "",
+          "market_cap": 2797609908.883274,
+          "name": "Meme-Token Token 0",
+          "r24h": -0.41605448506217035,
+          "r30d": 3.6696366117238437,
+          "r7d": 1.9168942996476268,
+          "symbol": "T0ME",
+          "volume": 274674006.58373654
+        },
+        {
+          "id": "meme-token-token-6",
+          "image": "",
+          "market_cap": 3167400005.4788475,
+          "name": "Meme-Token Token 6",
+          "r24h": -0.7019977660869056,
+          "r30d": -1.7152329406085947,
+          "r7d": 1.885064845244626,
+          "symbol": "T6ME",
+          "volume": 114403339.8985561
+        },
+        {
+          "id": "meme-token-token-1",
+          "image": "",
+          "market_cap": 1299167787.710517,
+          "name": "Meme-Token Token 1",
+          "r24h": -2.58058720997097,
+          "r30d": -9.103661998569294,
+          "r7d": 1.5136780888148147,
+          "symbol": "T1ME",
+          "volume": 208184139.89997587
+        },
+        {
+          "id": "meme-token-token-2",
+          "image": "",
+          "market_cap": 41326085.19147138,
+          "name": "Meme-Token Token 2",
+          "r24h": -1.2713367043995496,
+          "r30d": -10.292859173414719,
+          "r7d": -0.2078870275842002,
+          "symbol": "T2ME",
+          "volume": 245760732.48121274
+        },
+        {
+          "id": "meme-token-token-15",
+          "image": "",
+          "market_cap": 2730471557.2944703,
+          "name": "Meme-Token Token 15",
+          "r24h": -0.4067784850825553,
+          "r30d": -6.270654173376874,
+          "r7d": -0.2099969351659534,
+          "symbol": "T15ME",
+          "volume": 254821452.39034623
+        }
+      ],
+      "trend": -15.888471948532215,
+      "turnover": 0.04971876293478123,
+      "volume_24h": 4244059133.0396457,
+      "volume_surge": 0.9831574356048344
+    },
+    "rwa": {
+      "breadth_24h": 94.44444444444444,
+      "breadth_30d": 22.22222222222222,
+      "breadth_7d": 38.888888888888886,
+      "category": "real-world-assets-rwa",
+      "excess_24h": 2.1239484154488384,
+      "excess_30d": -4.460270945973763,
+      "excess_7d": -1.4908740283029642,
+      "key": "rwa",
+      "label": "RWA",
+      "laggards": [
+        {
+          "id": "real-world-assets-rwa-token-10",
+          "name": "Real-World-Assets-Rwa Token 10",
+          "r7d": -0.9801299298803827,
+          "symbol": "T10RE"
+        },
+        {
+          "id": "real-world-assets-rwa-token-8",
+          "name": "Real-World-Assets-Rwa Token 8",
+          "r7d": -0.605797210661343,
+          "symbol": "T8RE"
+        },
+        {
+          "id": "real-world-assets-rwa-token-7",
+          "name": "Real-World-Assets-Rwa Token 7",
+          "r7d": -0.2475888875075647,
+          "symbol": "T7RE"
+        }
+      ],
+      "market_cap": 81914296009.93364,
+      "momentum": -1.4908740283029642,
+      "n_tokens": 18,
+      "onchain": {
+        "buy_share": 64.0,
+        "holder_growth_7d": 0.84,
+        "tokens": [
+          {
+            "buy_share": 47.2,
+            "buys_24h": 522,
+            "holder_growth_7d": 1.22,
+            "holders_7d_ago": 10627,
+            "holders_now": 10757,
+            "id": "real-world-assets-rwa-token-9",
+            "network": "arbitrum",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3701274.1924121846,
+            "reserve_usd": 43011954.662913755,
+            "sells_24h": 583,
+            "symbol": "T9RE"
+          },
+          {
+            "buy_share": 90.4,
+            "buys_24h": 602,
+            "holder_growth_7d": 2.62,
+            "holders_7d_ago": 47468,
+            "holders_now": 48713,
+            "id": "real-world-assets-rwa-token-4",
+            "network": "arbitrum",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 3082922.338068582,
+            "reserve_usd": 3497757.9359654514,
+            "sells_24h": 64,
+            "symbol": "T4RE"
+          },
+          {
+            "buy_share": 54.3,
+            "buys_24h": 505,
+            "holder_growth_7d": -1.31,
+            "holders_7d_ago": 17903,
+            "holders_now": 17668,
+            "id": "real-world-assets-rwa-token-5",
+            "network": "eth",
+            "pool_name": "MOCK / USDC",
+            "pool_volume_24h_usd": 658227.3114249756,
+            "reserve_usd": 14797471.81336864,
+            "sells_24h": 425,
+            "symbol": "T5RE"
+          }
+        ]
+      },
+      "quadrant": "Lagging",
+      "ret_24h_capw": 1.5550813594637878,
+      "ret_24h_median": 1.4882457912793603,
+      "ret_30d_capw": 6.962410272137635,
+      "ret_30d_median": 6.729995535608685,
+      "ret_7d_capw": 2.0801463993992377,
+      "ret_7d_median": 1.6324108254651621,
+      "score": 86.1,
+      "score_parts": {
+        "breadth_7d": 100.0,
+        "dex_buy_share": 71.4,
+        "excess_24h": 100.0,
+        "holder_growth": 50.0,
+        "momentum_7d": 100.0,
+        "volume_surge": 28.6
+      },
+      "top_movers": [
+        {
+          "id": "real-world-assets-rwa-token-9",
+          "image": "",
+          "market_cap": 7836429302.587937,
+          "name": "Real-World-Assets-Rwa Token 9",
+          "r24h": 0.9871246189942544,
+          "r30d": 0.3441868407703561,
+          "r7d": 6.842949652628308,
+          "symbol": "T9RE",
+          "volume": 190803408.02925602
+        },
+        {
+          "id": "real-world-assets-rwa-token-4",
+          "image": "",
+          "market_cap": 248089256.468832,
+          "name": "Real-World-Assets-Rwa Token 4",
+          "r24h": -0.7698659381662332,
+          "r30d": 9.964244065980976,
+          "r7d": 6.150642925875291,
+          "symbol": "T4RE",
+          "volume": 182529618.26405945
+        },
+        {
+          "id": "real-world-assets-rwa-token-5",
+          "image": "",
+          "market_cap": 4427461214.323606,
+          "name": "Real-World-Assets-Rwa Token 5",
+          "r24h": 1.712944531650175,
+          "r30d": 11.36094366640236,
+          "r7d": 5.57596693622312,
+          "symbol": "T5RE",
+          "volume": 161540577.51894057
+        },
+        {
+          "id": "real-world-assets-rwa-token-12",
+          "image": "",
+          "market_cap": 2480746312.1538935,
+          "name": "Real-World-Assets-Rwa Token 12",
+          "r24h": 0.7112432408716702,
+          "r30d": -2.049957156101488,
+          "r7d": 4.637459746924317,
+          "symbol": "T12RE",
+          "volume": 58505688.57439739
+        },
+        {
+          "id": "real-world-assets-rwa-token-0",
+          "image": "",
+          "market_cap": 4515799476.367424,
+          "name": "Real-World-Assets-Rwa Token 0",
+          "r24h": 1.259241145793817,
+          "r30d": 3.725614711643673,
+          "r7d": 3.287167280902883,
+          "symbol": "T0RE",
+          "volume": 170261644.4614162
+        }
+      ],
+      "trend": -4.460270945973763,
+      "turnover": 0.042217340709113725,
+      "volume_24h": 3458203743.598563,
+      "volume_surge": 0.8592892559237391
+    }
+  },
+  "source": "demo"
+}

@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Rotation Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%232a78d6'/%3E%3C/svg%3E">
+<meta name="description" content="Which crypto sector the market is rotating into, built on CoinGecko API data.">
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #fcfcfb;
+    --surface-2: #f3f2ef;
+    --page: #f9f9f7;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #898781;
+    --grid: #e1e0d9;
+    --baseline: #c3c2b7;
+    --border: rgba(11,11,11,0.10);
+    --series-info: #2a78d6;
+    --status-good: #0ca30c;
+    --status-warning: #c98500;
+    --status-critical: #d03b3b;
+    --status-good-bg: rgba(12,163,12,0.12);
+    --status-info-bg: rgba(42,120,214,0.12);
+    --status-warning-bg: rgba(201,133,0,0.14);
+    --status-critical-bg: rgba(208,59,59,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1: #1a1a19; --surface-2: #222221; --page: #0d0d0d;
+      --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #898781;
+      --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,0.10);
+      --series-info: #3987e5; --status-good: #0ca30c; --status-warning: #fab219; --status-critical: #e66767;
+      --status-good-bg: rgba(12,163,12,0.18); --status-info-bg: rgba(57,135,229,0.18);
+      --status-warning-bg: rgba(250,178,25,0.16); --status-critical-bg: rgba(230,103,103,0.16);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1: #1a1a19; --surface-2: #222221; --page: #0d0d0d;
+    --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #898781;
+    --grid: #2c2c2a; --baseline: #383835; --border: rgba(255,255,255,0.10);
+    --series-info: #3987e5; --status-good: #0ca30c; --status-warning: #fab219; --status-critical: #e66767;
+    --status-good-bg: rgba(12,163,12,0.18); --status-info-bg: rgba(57,135,229,0.18);
+    --status-warning-bg: rgba(250,178,25,0.16); --status-critical-bg: rgba(230,103,103,0.16);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 15px; line-height: 1.5;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 20px 16px 64px; }
+  header.top { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 4px; }
+  .brand h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .brand p { margin: 0; color: var(--text-secondary); font-size: 14px; max-width: 52ch; }
+  .top-right { display: flex; align-items: center; gap: 10px; }
+  .handle { font-size: 13px; color: var(--text-secondary); }
+  .handle b { color: var(--text-primary); }
+  button.theme-toggle {
+    border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary);
+    border-radius: 8px; padding: 6px 10px; font-size: 13px; cursor: pointer;
+  }
+  button.theme-toggle:hover { color: var(--text-primary); }
+  .meta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin: 14px 0 22px; font-size: 13px; color: var(--text-muted); }
+  .dot-live { width: 7px; height: 7px; border-radius: 50%; background: var(--status-good); display: inline-block; margin-right: 6px; }
+
+  section { margin-bottom: 36px; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); margin: 0 0 12px; font-weight: 600; }
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+
+  .grid-2 { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px; }
+  @media (max-width: 860px) { .grid-2 { grid-template-columns: 1fr; } }
+
+  /* Quadrant map */
+  .quad-wrap { position: relative; }
+  svg.quadmap { width: 100%; height: auto; display: block; }
+  .quad-label { font-size: 11px; fill: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .axis-label { font-size: 11px; fill: var(--text-muted); }
+  .gridline { stroke: var(--grid); stroke-width: 1; }
+  .baseline { stroke: var(--baseline); stroke-width: 1.5; }
+  .trail-path { fill: none; stroke-width: 1.5; opacity: 0.55; }
+  .pt-dot { stroke: var(--surface-1); stroke-width: 2; cursor: pointer; }
+  .pt-label { font-size: 12px; font-weight: 600; fill: var(--text-primary); pointer-events: none; }
+  .legend-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: 12px; color: var(--text-secondary); }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  thead th {
+    text-align: left; font-weight: 600; color: var(--text-muted); font-size: 11.5px;
+    text-transform: uppercase; letter-spacing: 0.03em; padding: 0 10px 10px; border-bottom: 1px solid var(--grid);
+  }
+  thead th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tbody td { padding: 10px; border-bottom: 1px solid var(--grid); }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-2); }
+  .sector-name { font-weight: 600; }
+  .sector-sub { color: var(--text-muted); font-size: 12px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px;
+    font-size: 11.5px; font-weight: 600; white-space: nowrap;
+  }
+  .pill-good { background: var(--status-good-bg); color: var(--status-good); }
+  .pill-info { background: var(--status-info-bg); color: var(--series-info); }
+  .pill-warning { background: var(--status-warning-bg); color: var(--status-warning); }
+  .pill-critical { background: var(--status-critical-bg); color: var(--status-critical); }
+  .score-bar-track { width: 64px; height: 6px; border-radius: 3px; background: var(--grid); overflow: hidden; display: inline-block; vertical-align: middle; margin-left: 8px; }
+  .score-bar-fill { height: 100%; background: var(--series-info); }
+  .up { color: var(--status-good); }
+  .down { color: var(--status-critical); }
+  .flat { color: var(--text-muted); }
+
+  .alert-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .alert-item { display: flex; gap: 10px; align-items: flex-start; font-size: 13.5px; }
+  .alert-badge { flex: none; margin-top: 2px; width: 8px; height: 8px; border-radius: 50%; }
+  .alert-time { color: var(--text-muted); font-size: 12px; display: block; margin-top: 1px; }
+  .empty-note { color: var(--text-muted); font-size: 13px; font-style: italic; }
+
+  .onchain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .onchain-tile { border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+  .onchain-tile h3 { margin: 0 0 8px; font-size: 13.5px; }
+  .onchain-stat { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--text-secondary); padding: 2px 0; }
+  .onchain-stat b { color: var(--text-primary); font-variant-numeric: tabular-nums; }
+
+  .disclaimer {
+    font-size: 12.5px; color: var(--text-muted); border-top: 1px solid var(--border); padding-top: 16px; margin-top: 8px;
+  }
+  .disclaimer p { margin: 0 0 8px; }
+  .links-block { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; margin-top: 4px; }
+  .links-block a { color: var(--series-info); text-decoration: none; }
+  .links-block a:hover { text-decoration: underline; }
+  footer.cg-attr { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 12.5px; color: var(--text-muted); }
+  footer.cg-attr svg { flex: none; }
+
+  .tooltip {
+    position: fixed; pointer-events: none; z-index: 20; background: var(--surface-1);
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 12.5px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18); max-width: 240px; display: none;
+  }
+  .tooltip b { display: block; margin-bottom: 4px; font-size: 13px; }
+  .tooltip .row { display: flex; justify-content: space-between; gap: 12px; color: var(--text-secondary); }
+  .tooltip .row b { display: inline; margin: 0; color: var(--text-primary); font-variant-numeric: tabular-nums; }
+
+  .state-msg { padding: 40px 16px; text-align: center; color: var(--text-muted); }
+  .demo-banner {
+    background: var(--status-warning-bg); color: var(--status-warning); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 14px; font-size: 13px; margin-bottom: 18px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Market Rotation Tracker</h1>
+      <p>Which crypto sector is actually attracting flow right now &mdash; relative strength, breadth and onchain buy pressure, built on CoinGecko API data.</p>
+    </div>
+    <div class="top-right">
+      <span class="handle">by <b>@Okada_DeFi0x</b></span>
+      <button class="theme-toggle" id="themeToggle" type="button">Toggle theme</button>
+    </div>
+  </header>
+  <div class="meta-row">
+    <span><span class="dot-live"></span>Updated <b id="updatedAt">&mdash;</b></span>
+    <span id="benchLine">&mdash;</span>
+    <span id="apiCreditsLine"></span>
+  </div>
+
+  <div id="app">
+    <div class="state-msg">Loading data&hellip;</div>
+  </div>
+
+  <section class="disclaimer">
+    <p><b>What's CoinGecko and what's ours.</b> Prices, market caps, trading volume, DEX pool activity and holder counts come directly from the CoinGecko API. The rotation score, quadrant (Leading / Improving / Weakening / Lagging), relative-strength and breadth figures on this page are computed by this project's own code from that data &mdash; they are not official CoinGecko classifications or financial advice. Rising trading volume on its own does not prove net capital inflow into a sector; that's why this tracker also checks DEX buy/sell flow and holder growth before calling something a rotation.</p>
+    <div class="links-block">
+      <a href="https://github.com/s23539090-code/market-rotation-tracker" target="_blank" rel="noopener">Repo on GitHub &#8599;</a>
+      <a href="https://www.coingecko.com/en/api?utm_source=x&amp;utm_content=Okada_DeFi0x" target="_blank" rel="noopener">Get a CoinGecko API key &#8599;</a>
+      <a href="https://www.coingecko.com/en/api/pricing?utm_source=x&amp;utm_content=Okada_DeFi0x" target="_blank" rel="noopener">Pricing &#8599;</a>
+      <a href="https://docs.coingecko.com?utm_source=x&amp;utm_content=Okada_DeFi0x" target="_blank" rel="noopener">API docs &#8599;</a>
+    </div>
+    <footer class="cg-attr">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7.3" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="8" r="2.6" fill="currentColor"/></svg>
+      Data: CoinGecko API
+    </footer>
+  </section>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+const STATUS = {
+  Leading:   { color: 'var(--status-good)',     pill: 'pill-good',     label: 'Leading' },
+  Improving: { color: 'var(--series-info)',     pill: 'pill-info',     label: 'Improving' },
+  Weakening: { color: 'var(--status-warning)',  pill: 'pill-warning',  label: 'Weakening' },
+  Lagging:   { color: 'var(--status-critical)', pill: 'pill-critical', label: 'Lagging' },
+};
+const ALERT_COLOR = {
+  quadrant_change: 'var(--series-info)',
+  breadth_jump: 'var(--status-warning)',
+  volume_surge: 'var(--status-good)',
+};
+
+function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name.replace('var(','').replace(')','')).trim() || name;
+}
+function resolveColor(token) {
+  const m = token.match(/^var\((--[\w-]+)\)$/);
+  if (!m) return token;
+  return getComputedStyle(document.documentElement).getPropertyValue(m[1]).trim();
+}
+function fmtPct(v, digits=1) {
+  if (v === null || v === undefined || Number.isNaN(v)) return '&mdash;';
+  const s = v.toFixed(digits);
+  return (v > 0 ? '+' : '') + s + '%';
+}
+function fmtNum(v, digits=1) {
+  if (v === null || v === undefined || Number.isNaN(v)) return '&mdash;';
+  return v.toFixed(digits);
+}
+function fmtUsd(v) {
+  if (v === null || v === undefined) return '&mdash;';
+  if (v >= 1e9) return '$' + (v/1e9).toFixed(2) + 'B';
+  if (v >= 1e6) return '$' + (v/1e6).toFixed(1) + 'M';
+  if (v >= 1e3) return '$' + (v/1e3).toFixed(0) + 'K';
+  return '$' + v.toFixed(0);
+}
+function trendClass(v) {
+  if (v === null || v === undefined) return 'flat';
+  return v > 0.3 ? 'up' : (v < -0.3 ? 'down' : 'flat');
+}
+function timeAgo(iso) {
+  if (!iso) return '&mdash;';
+  const d = new Date(iso.replace(' ', 'T'));
+  const diffMin = Math.round((Date.now() - d.getTime()) / 60000);
+  if (diffMin < 1) return 'just now';
+  if (diffMin < 60) return diffMin + ' min ago';
+  const h = Math.round(diffMin / 60);
+  if (h < 48) return h + ' h ago';
+  return Math.round(h / 24) + ' d ago';
+}
+function fmtClock(iso) {
+  if (!iso) return '&mdash;';
+  const d = new Date(iso.replace(' ', 'T'));
+  return d.toUTCString().replace(':00 GMT', ' UTC').replace(' GMT','  UTC');
+}
+
+async function loadJson(path) {
+  try {
+    const r = await fetch(path + '?_=' + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) { return null; }
+}
+
+function sectorsSorted(latest) {
+  return Object.values(latest.sectors).sort((a, b) => (b.score ?? -1) - (a.score ?? -1));
+}
+
+function renderQuadrantMap(container, sectors, trails) {
+  const W = 640, H = 440, PAD = 48;
+  const vals = [];
+  sectors.forEach(s => { if (s.trend != null) vals.push(Math.abs(s.trend)); if (s.momentum != null) vals.push(Math.abs(s.momentum)); });
+  const extent = Math.max(5, ...vals.filter(v => isFinite(v))) * 1.25 || 10;
+  const sx = v => PAD + ((v + extent) / (2 * extent)) * (W - 2 * PAD);
+  const sy = v => H - PAD - ((v + extent) / (2 * extent)) * (H - 2 * PAD);
+
+  let svg = `<svg class="quadmap" viewBox="0 0 ${W} ${H}" role="img" aria-label="Sector rotation quadrant map">`;
+  // grid
+  for (let i = -4; i <= 4; i++) {
+    const v = (extent / 4) * i;
+    svg += `<line class="gridline" x1="${sx(v)}" y1="${PAD}" x2="${sx(v)}" y2="${H-PAD}"/>`;
+    svg += `<line class="gridline" x1="${PAD}" y1="${sy(v)}" x2="${W-PAD}" y2="${sy(v)}"/>`;
+  }
+  svg += `<line class="baseline" x1="${sx(0)}" y1="${PAD}" x2="${sx(0)}" y2="${H-PAD}"/>`;
+  svg += `<line class="baseline" x1="${PAD}" y1="${sy(0)}" x2="${W-PAD}" y2="${sy(0)}"/>`;
+  // quadrant labels
+  svg += `<text class="quad-label" x="${W-PAD}" y="${PAD+16}" text-anchor="end">Leading</text>`;
+  svg += `<text class="quad-label" x="${PAD}" y="${PAD+16}" text-anchor="start">Improving</text>`;
+  svg += `<text class="quad-label" x="${W-PAD}" y="${H-PAD-8}" text-anchor="end">Weakening</text>`;
+  svg += `<text class="quad-label" x="${PAD}" y="${H-PAD-8}" text-anchor="start">Lagging</text>`;
+  svg += `<text class="axis-label" x="${W/2}" y="${H-10}" text-anchor="middle">Trend &larr; 30d excess vs ETH &rarr;</text>`;
+  svg += `<text class="axis-label" x="14" y="${H/2}" text-anchor="middle" transform="rotate(-90 14 ${H/2})">Momentum &larr; 7d excess vs ETH &rarr;</text>`;
+
+  // Precompute each point, then de-collide the LABELS (not the dots) so a
+  // tight cluster of sectors doesn't render as stacked, unreadable text.
+  const points = sectors
+    .filter(s => s.trend != null && s.momentum != null)
+    .map(s => {
+      const st = STATUS[s.quadrant] || STATUS.Improving;
+      const cx = sx(s.trend), cy = sy(s.momentum);
+      const r = 6 + Math.min(10, (s.score || 0) / 10);
+      return { s, color: resolveColor(st.color), cx, cy, r, side: cx > W / 2 ? 'end' : 'start', labelY: cy };
+    });
+  ['start', 'end'].forEach(side => {
+    const group = points.filter(p => p.side === side).sort((a, b) => a.cy - b.cy);
+    const MIN_GAP = 15;
+    for (let i = 1; i < group.length; i++) {
+      if (group[i].labelY - group[i - 1].labelY < MIN_GAP) group[i].labelY = group[i - 1].labelY + MIN_GAP;
+    }
+    // re-center the stack around its own average so it doesn't drift off the cluster
+    if (group.length > 1) {
+      const shift = (group[0].cy + group[group.length - 1].cy) / 2 -
+                    (group[0].labelY + group[group.length - 1].labelY) / 2;
+      group.forEach(p => p.labelY += shift);
+    }
+  });
+
+  points.forEach(p => {
+    const trail = (trails[p.s.key] || []).filter(pt => pt.trend != null && pt.momentum != null);
+    if (trail.length > 1) {
+      const pts = trail.map(pt => `${sx(pt.trend)},${sy(pt.momentum)}`).join(' ');
+      svg += `<polyline class="trail-path" points="${pts}" stroke="${p.color}"/>`;
+    }
+  });
+  points.forEach(p => {
+    svg += `<circle class="pt-dot" data-key="${p.s.key}" cx="${p.cx}" cy="${p.cy}" r="${p.r}" fill="${p.color}"/>`;
+    const dx = p.side === 'end' ? -(p.r + 6) : (p.r + 6);
+    if (Math.abs(p.labelY - p.cy) > 1) {
+      svg += `<line class="gridline" x1="${p.cx}" y1="${p.cy}" x2="${p.cx + dx * 0.4}" y2="${p.labelY}"/>`;
+    }
+    svg += `<text class="pt-label" x="${p.cx + dx}" y="${p.labelY + 4}" text-anchor="${p.side}">${p.s.label}</text>`;
+  });
+  svg += `</svg>`;
+  container.innerHTML = svg;
+
+  const tooltip = document.getElementById('tooltip');
+  container.querySelectorAll('.pt-dot').forEach(el => {
+    const s = sectors.find(x => x.key === el.dataset.key);
+    el.addEventListener('mousemove', (e) => {
+      tooltip.style.display = 'block';
+      tooltip.style.left = (e.clientX + 14) + 'px';
+      tooltip.style.top = (e.clientY + 14) + 'px';
+      tooltip.innerHTML = `<b>${s.label}</b>
+        <div class="row"><span>Score</span><b>${fmtNum(s.score,1)}</b></div>
+        <div class="row"><span>Quadrant</span><b>${s.quadrant || '&mdash;'}</b></div>
+        <div class="row"><span>7d excess vs ETH</span><b>${fmtPct(s.excess_7d)}</b></div>
+        <div class="row"><span>30d excess vs ETH</span><b>${fmtPct(s.excess_30d)}</b></div>
+        <div class="row"><span>Breadth (7d)</span><b>${fmtNum(s.breadth_7d,0)}%</b></div>`;
+    });
+    el.addEventListener('mouseleave', () => tooltip.style.display = 'none');
+  });
+}
+
+function renderLegend() {
+  return `<div class="legend-row">` + Object.values(STATUS).map(s =>
+    `<span class="legend-item"><span class="legend-swatch" style="background:${resolveColor(s.color)}"></span>${s.label}</span>`
+  ).join('') + `</div>`;
+}
+
+function renderTable(sectors) {
+  const rows = sectors.map(s => {
+    const st = STATUS[s.quadrant] || STATUS.Improving;
+    const oc = s.onchain;
+    return `<tr>
+      <td>
+        <div class="sector-name">${s.label}</div>
+        <div class="sector-sub">${s.n_tokens} tokens &middot; ${fmtUsd(s.market_cap)} cap</div>
+      </td>
+      <td><span class="pill ${st.pill}">${st.label}</span></td>
+      <td class="num">${fmtNum(s.score,1)}<span class="score-bar-track"><span class="score-bar-fill" style="width:${Math.max(0,Math.min(100,s.score||0))}%"></span></span></td>
+      <td class="num ${trendClass(s.excess_24h)}">${fmtPct(s.excess_24h)}</td>
+      <td class="num ${trendClass(s.excess_7d)}">${fmtPct(s.excess_7d)}</td>
+      <td class="num">${s.breadth_7d != null ? fmtNum(s.breadth_7d,0)+'%' : '&mdash;'}</td>
+      <td class="num">${s.volume_surge != null ? fmtNum(s.volume_surge,2)+'&times;' : '&mdash;'}</td>
+      <td class="num">${oc && oc.buy_share != null ? fmtNum(oc.buy_share,0)+'%' : '&mdash;'}</td>
+      <td class="num ${oc ? trendClass(oc.holder_growth_7d) : ''}">${oc && oc.holder_growth_7d != null ? fmtPct(oc.holder_growth_7d,1) : '&mdash;'}</td>
+    </tr>`;
+  }).join('');
+  return `<div class="card" style="overflow-x:auto">
+    <table>
+      <thead><tr>
+        <th>Sector</th><th>Quadrant</th><th class="num">Score</th>
+        <th class="num">24h vs ETH</th><th class="num">7d vs ETH</th>
+        <th class="num">Breadth 7d</th><th class="num">Turnover surge</th>
+        <th class="num">DEX buy share</th><th class="num">Holder &#916; 7d</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>
+  <p class="empty-note" style="margin-top:10px">Breadth = % of tracked tokens in the sector beating ETH over 7d. DEX buy share and holder growth are averaged across each sector's top movers' most active pool &mdash; a closer proxy for net flow than raw volume.</p>`;
+}
+
+function renderOnchain(sectors) {
+  const withData = sectors.filter(s => s.onchain && s.onchain.tokens && s.onchain.tokens.length);
+  if (!withData.length) {
+    return `<p class="empty-note">No onchain data yet &mdash; the next scheduled run will attempt it (needs an Analyst-tier API key).</p>`;
+  }
+  const tiles = withData.map(s => {
+    const tokens = s.onchain.tokens.slice(0, 3).map(t => `
+      <div class="onchain-stat"><span>${t.symbol || t.id}</span>
+        <b>${t.buy_share != null ? fmtNum(t.buy_share,0)+'% buys' : 'no pool data'}</b></div>
+    `).join('');
+    return `<div class="onchain-tile">
+      <h3>${s.label}</h3>
+      <div class="onchain-stat"><span>Avg. DEX buy share</span><b>${s.onchain.buy_share != null ? fmtNum(s.onchain.buy_share,0)+'%' : '&mdash;'}</b></div>
+      <div class="onchain-stat"><span>Avg. holder growth (7d)</span><b class="${trendClass(s.onchain.holder_growth_7d)}">${s.onchain.holder_growth_7d != null ? fmtPct(s.onchain.holder_growth_7d,1) : '&mdash;'}</b></div>
+      <div style="margin-top:8px;border-top:1px solid var(--border);padding-top:8px">${tokens}</div>
+    </div>`;
+  }).join('');
+  return `<div class="onchain-grid">${tiles}</div>`;
+}
+
+function renderAlerts(alertsHistory) {
+  if (!alertsHistory.length) {
+    return `<p class="empty-note">No rotation alerts yet. Alerts fire when a sector changes quadrant, its 7d breadth jumps sharply, or its turnover spikes above its recent average.</p>`;
+  }
+  const items = alertsHistory.slice(0, 20).map(a => `
+    <li class="alert-item">
+      <span class="alert-badge" style="background:${resolveColor(ALERT_COLOR[a.type] || 'var(--series-info)')}"></span>
+      <span>${a.message}<span class="alert-time">${fmtClock(a.at)}</span></span>
+    </li>`).join('');
+  return `<ul class="alert-list">${items}</ul>`;
+}
+
+async function main() {
+  const [latest, history, trails, alertLog] = await Promise.all([
+    loadJson('data/latest.json'), loadJson('data/history.json'), loadJson('data/trails.json'),
+    loadJson('data/alerts.json'),
+  ]);
+  const app = document.getElementById('app');
+  if (!latest) {
+    app.innerHTML = `<div class="state-msg">No data yet. Run <code>python run.py collect</code> (or wait for the next scheduled run) to generate the first snapshot.</div>`;
+    return;
+  }
+  document.getElementById('updatedAt').textContent = timeAgo(latest.generated_at) + ' (' + fmtClock(latest.generated_at) + ')';
+  const bench = latest.benchmark || {};
+  document.getElementById('benchLine').innerHTML = `ETH 24h <b class="${trendClass(bench.r24h)}">${fmtPct(bench.r24h)}</b> &middot; 7d <b class="${trendClass(bench.r7d)}">${fmtPct(bench.r7d)}</b>`;
+  if (latest.credits_used) document.getElementById('apiCreditsLine').textContent = latest.credits_used + ' API calls this run';
+
+  const sectors = sectorsSorted(latest);
+  const demoBanner = latest.source === 'demo'
+    ? `<div class="demo-banner">This is simulated demo data (<code>python run.py demo</code>), not live CoinGecko data. Run <code>python run.py collect</code> with a real API key to replace it.</div>`
+    : '';
+  const alertsNow = alertLog && alertLog.length ? alertLog : (latest.alerts || []).map(a => ({ ...a, at: latest.generated_at }));
+
+  app.innerHTML = `
+    ${demoBanner}
+    <section>
+      <div class="grid-2">
+        <div class="card quad-wrap">
+          <h2 style="margin-bottom:4px">Rotation map</h2>
+          <div id="quadmapHost"></div>
+          ${renderLegend()}
+        </div>
+        <div class="card">
+          <h2>Rotation log</h2>
+          <div id="alertsHost"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Sector leaderboard</h2>
+      <div id="tableHost"></div>
+    </section>
+    <section>
+      <h2>Onchain check (Layer 3)</h2>
+      <div class="card"><div id="onchainHost"></div></div>
+    </section>
+  `;
+  renderQuadrantMap(document.getElementById('quadmapHost'), sectors, trails || {});
+  document.getElementById('alertsHost').innerHTML = renderAlerts(alertsNow);
+  document.getElementById('tableHost').innerHTML = renderTable(sectors);
+  document.getElementById('onchainHost').innerHTML = renderOnchain(sectors);
+}
+
+// theme toggle (persists per-viewer only; never required to read the page)
+(function initTheme() {
+  let saved = null;
+  try { saved = localStorage.getItem('rotation-theme'); } catch (e) {}
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('rotation-theme', next); } catch (e) {}
+    main();
+  });
+})();
+
+main();
+</script>
+</body>
+</html>
