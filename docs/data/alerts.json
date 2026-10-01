@@ -1,5 +1,189 @@
 [
   {
+    "from": "Lagging",
+    "label": "AI",
+    "message": "AI: Lagging \u2192 Leading",
+    "sector": "ai",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 35.1,
+    "label": "AI",
+    "message": "AI: breadth jumped 35 pts (28% \u2192 63%)",
+    "sector": "ai",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "label": "AI",
+    "message": "AI: turnover 2.2x its recent average",
+    "ratio": 2.21,
+    "sector": "ai",
+    "type": "volume_surge",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "DeFi",
+    "message": "DeFi: Lagging \u2192 Leading",
+    "sector": "defi",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 58.6,
+    "label": "DeFi",
+    "message": "DeFi: breadth jumped 59 pts (11% \u2192 70%)",
+    "sector": "defi",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "label": "DeFi",
+    "message": "DeFi: turnover 1.9x its recent average",
+    "ratio": 1.86,
+    "sector": "defi",
+    "type": "volume_surge",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "RWA",
+    "message": "RWA: Lagging \u2192 Leading",
+    "sector": "rwa",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 27.8,
+    "label": "RWA",
+    "message": "RWA: breadth jumped 28 pts (39% \u2192 67%)",
+    "sector": "rwa",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Memes",
+    "message": "Memes: Lagging \u2192 Leading",
+    "sector": "meme",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 62.9,
+    "label": "Memes",
+    "message": "Memes: breadth jumped 63 pts (0% \u2192 63%)",
+    "sector": "meme",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "label": "Memes",
+    "message": "Memes: turnover 2.2x its recent average",
+    "ratio": 2.16,
+    "sector": "meme",
+    "type": "volume_surge",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Layer 1",
+    "message": "Layer 1: Lagging \u2192 Leading",
+    "sector": "l1",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 67.5,
+    "label": "Layer 1",
+    "message": "Layer 1: breadth jumped 68 pts (0% \u2192 68%)",
+    "sector": "l1",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Layer 2",
+    "message": "Layer 2: Lagging \u2192 Leading",
+    "sector": "l2",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 56.7,
+    "label": "Layer 2",
+    "message": "Layer 2: breadth jumped 57 pts (11% \u2192 68%)",
+    "sector": "l2",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "label": "Layer 2",
+    "message": "Layer 2: turnover 2.0x its recent average",
+    "ratio": 1.96,
+    "sector": "l2",
+    "type": "volume_surge",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Gaming",
+    "message": "Gaming: Lagging \u2192 Leading",
+    "sector": "gaming",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 76.6,
+    "label": "Gaming",
+    "message": "Gaming: breadth jumped 77 pts (6% \u2192 82%)",
+    "sector": "gaming",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "label": "Gaming",
+    "message": "Gaming: turnover 2.0x its recent average",
+    "ratio": 1.95,
+    "sector": "gaming",
+    "type": "volume_surge",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "DePIN",
+    "message": "DePIN: Lagging \u2192 Leading",
+    "sector": "depin",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "delta": 62.6,
+    "label": "DePIN",
+    "message": "DePIN: breadth jumped 63 pts (22% \u2192 85%)",
+    "sector": "depin",
+    "type": "breadth_jump",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
+    "label": "DePIN",
+    "message": "DePIN: turnover 1.7x its recent average",
+    "ratio": 1.68,
+    "sector": "depin",
+    "type": "volume_surge",
+    "at": "2026-10-01T03:48:29Z"
+  },
+  {
     "delta": -44.4,
     "label": "AI",
     "message": "AI: breadth dropped 44 pts (100% \u2192 56%)",
