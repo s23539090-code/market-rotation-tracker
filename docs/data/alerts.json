@@ -1,6 +1,15 @@
 [
   {
     "from": "Leading",
+    "label": "RWA",
+    "message": "RWA: Leading \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-04T18:18:18Z"
+  },
+  {
+    "from": "Leading",
     "label": "Layer 1",
     "message": "Layer 1: Leading \u2192 Weakening",
     "sector": "l1",
@@ -1695,14 +1704,6 @@
     "sector": "defi",
     "to": "Lagging",
     "type": "quadrant_change",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "delta": -83.3,
-    "label": "DeFi",
-    "message": "DeFi: breadth dropped 83 pts (94% \u2192 11%)",
-    "sector": "defi",
-    "type": "breadth_jump",
     "at": "2026-10-01T03:23:58Z"
   }
 ]
