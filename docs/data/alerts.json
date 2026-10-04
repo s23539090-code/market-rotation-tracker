@@ -1,5 +1,23 @@
 [
   {
+    "from": "Leading",
+    "label": "RWA",
+    "message": "RWA: Leading \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-04T23:18:47Z"
+  },
+  {
+    "from": "Leading",
+    "label": "Gaming",
+    "message": "Gaming: Leading \u2192 Weakening",
+    "sector": "gaming",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-04T23:18:47Z"
+  },
+  {
     "from": "Weakening",
     "label": "RWA",
     "message": "RWA: Weakening \u2192 Leading",
@@ -1687,23 +1705,6 @@
     "message": "DePIN: Weakening \u2192 Improving",
     "sector": "depin",
     "to": "Improving",
-    "type": "quadrant_change",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "delta": 77.8,
-    "label": "DePIN",
-    "message": "DePIN: breadth jumped 78 pts (22% \u2192 100%)",
-    "sector": "depin",
-    "type": "breadth_jump",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "from": "Improving",
-    "label": "AI",
-    "message": "AI: Improving \u2192 Lagging",
-    "sector": "ai",
-    "to": "Lagging",
     "type": "quadrant_change",
     "at": "2026-10-01T03:23:58Z"
   }
