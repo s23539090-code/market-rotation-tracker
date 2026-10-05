@@ -100,7 +100,24 @@
   tbody tr:last-child td { border-bottom: none; }
   tbody tr:hover { background: var(--surface-2); }
   .sector-name { font-weight: 600; }
+  .sector-name a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--text-muted); }
+  .sector-name a:hover { color: var(--series-info); border-bottom-color: var(--series-info); }
   .sector-sub { color: var(--text-muted); font-size: 12px; }
+  details.movers { margin-top: 6px; }
+  details.movers summary {
+    cursor: pointer; font-size: 11.5px; color: var(--series-info); font-weight: 600;
+    list-style: none; display: flex; align-items: center; gap: 4px;
+  }
+  details.movers summary::-webkit-details-marker { display: none; }
+  details.movers summary::before { content: '\25B8'; font-size: 10px; }
+  details.movers[open] summary::before { content: '\25BE'; }
+  .mover-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 7px; }
+  .mover-chip {
+    font-size: 11.5px; background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 6px; padding: 3px 8px; display: inline-flex; gap: 5px; align-items: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .mover-chip .sym { color: var(--text-secondary); font-weight: 600; }
   .pill {
     display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px;
     font-size: 11.5px; font-weight: 600; white-space: nowrap;
@@ -360,14 +377,33 @@ function renderLegend() {
   ).join('') + `</div>`;
 }
 
+function categoryUrl(category) {
+  return `https://www.coingecko.com/en/categories/${encodeURIComponent(category)}?utm_source=x&utm_content=Okada_DeFi0x`;
+}
+
+function renderMovers(s) {
+  const movers = (s.top_movers || []).slice(0, 5);
+  if (!movers.length) return '';
+  const chips = movers.map(t => `
+    <span class="mover-chip">
+      <span class="sym">${(t.symbol || t.id || '').toUpperCase()}</span>
+      <b class="${trendClass(t.r7d)}">${fmtPct(t.r7d)}</b>
+    </span>`).join('');
+  return `<details class="movers">
+    <summary>Top movers 7d</summary>
+    <div class="mover-chips">${chips}</div>
+  </details>`;
+}
+
 function renderTable(sectors) {
   const rows = sectors.map(s => {
     const st = STATUS[s.quadrant] || STATUS.Improving;
     const oc = s.onchain;
     return `<tr>
       <td>
-        <div class="sector-name">${s.label}</div>
+        <div class="sector-name">${s.category ? `<a href="${categoryUrl(s.category)}" target="_blank" rel="noopener" title="View all ${s.label} tokens on CoinGecko">${s.label} &#8599;</a>` : s.label}</div>
         <div class="sector-sub">${s.n_tokens} tokens &middot; ${fmtUsd(s.market_cap)} cap</div>
+        ${renderMovers(s)}
       </td>
       <td><span class="pill ${st.pill}">${st.label}</span></td>
       <td class="num">${fmtNum(s.score,1)}<span class="score-bar-track"><span class="score-bar-fill" style="width:${Math.max(0,Math.min(100,s.score||0))}%"></span></span></td>
@@ -390,7 +426,7 @@ function renderTable(sectors) {
       <tbody>${rows}</tbody>
     </table>
   </div>
-  <p class="empty-note" style="margin-top:10px">Breadth = % of tracked tokens in the sector beating ETH over 7d. DEX buy share and holder growth are averaged across each sector's top movers' most active pool &mdash; a closer proxy for net flow than raw volume.</p>`;
+  <p class="empty-note" style="margin-top:10px">Breadth = % of tracked tokens in the sector beating ETH over 7d. DEX buy share and holder growth are averaged across each sector's top movers' most active pool &mdash; a closer proxy for net flow than raw volume. Click a sector name to see every token CoinGecko tracks in that category; expand "Top movers 7d" for the best performers right here.</p>`;
 }
 
 function renderOnchain(sectors) {
