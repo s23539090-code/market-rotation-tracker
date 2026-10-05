@@ -1,5 +1,14 @@
 [
   {
+    "from": "Leading",
+    "label": "RWA",
+    "message": "RWA: Leading \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-05T23:18:50Z"
+  },
+  {
     "label": "Layer 1",
     "message": "Layer 1: turnover 1.5x its recent average",
     "ratio": 1.51,
@@ -1703,15 +1712,6 @@
     "message": "Gaming: breadth dropped 100 pts (100% \u2192 0%)",
     "sector": "gaming",
     "type": "breadth_jump",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "from": "Leading",
-    "label": "DePIN",
-    "message": "DePIN: Leading \u2192 Weakening",
-    "sector": "depin",
-    "to": "Weakening",
-    "type": "quadrant_change",
     "at": "2026-10-01T03:23:58Z"
   }
 ]
