@@ -1,5 +1,14 @@
 [
   {
+    "from": "Weakening",
+    "label": "RWA",
+    "message": "RWA: Weakening \u2192 Leading",
+    "sector": "rwa",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-06T00:31:59Z"
+  },
+  {
     "from": "Leading",
     "label": "RWA",
     "message": "RWA: Leading \u2192 Weakening",
@@ -1704,14 +1713,6 @@
     "sector": "gaming",
     "to": "Weakening",
     "type": "quadrant_change",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "delta": -100.0,
-    "label": "Gaming",
-    "message": "Gaming: breadth dropped 100 pts (100% \u2192 0%)",
-    "sector": "gaming",
-    "type": "breadth_jump",
     "at": "2026-10-01T03:23:58Z"
   }
 ]
