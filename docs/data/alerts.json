@@ -1,5 +1,14 @@
 [
   {
+    "from": "Weakening",
+    "label": "Layer 2",
+    "message": "Layer 2: Weakening \u2192 Leading",
+    "sector": "l2",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-06T17:20:00Z"
+  },
+  {
     "from": "Leading",
     "label": "Layer 2",
     "message": "Layer 2: Leading \u2192 Weakening",
@@ -1705,15 +1714,6 @@
     "message": "Layer 1: breadth dropped 78 pts (94% \u2192 17%)",
     "sector": "l1",
     "type": "breadth_jump",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "from": "Leading",
-    "label": "Layer 2",
-    "message": "Layer 2: Leading \u2192 Weakening",
-    "sector": "l2",
-    "to": "Weakening",
-    "type": "quadrant_change",
     "at": "2026-10-01T03:23:58Z"
   }
 ]
