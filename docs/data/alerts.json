@@ -1,6 +1,14 @@
 [
   {
     "label": "RWA",
+    "message": "RWA: turnover 1.6x its recent average",
+    "ratio": 1.64,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-09T11:22:00Z"
+  },
+  {
+    "label": "RWA",
     "message": "RWA: turnover 1.7x its recent average",
     "ratio": 1.69,
     "sector": "rwa",
@@ -1715,15 +1723,6 @@
     "message": "Layer 1: breadth dropped 56 pts (94% \u2192 39%)",
     "sector": "l1",
     "type": "breadth_jump",
-    "at": "2026-10-01T03:23:58Z"
-  },
-  {
-    "from": "Leading",
-    "label": "Layer 2",
-    "message": "Layer 2: Leading \u2192 Weakening",
-    "sector": "l2",
-    "to": "Weakening",
-    "type": "quadrant_change",
     "at": "2026-10-01T03:23:58Z"
   }
 ]
