@@ -1,5 +1,23 @@
 [
   {
+    "from": "Weakening",
+    "label": "AI",
+    "message": "AI: Weakening \u2192 Leading",
+    "sector": "ai",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-13T09:25:24Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Memes",
+    "message": "Memes: Lagging \u2192 Weakening",
+    "sector": "meme",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-13T09:25:24Z"
+  },
+  {
     "from": "Leading",
     "label": "AI",
     "message": "AI: Leading \u2192 Weakening",
@@ -1739,21 +1757,5 @@
     "sector": "l2",
     "type": "volume_surge",
     "at": "2026-10-01T07:24:01Z"
-  },
-  {
-    "label": "AI",
-    "message": "AI: turnover 1.7x its recent average",
-    "ratio": 1.68,
-    "sector": "ai",
-    "type": "volume_surge",
-    "at": "2026-10-01T06:28:32Z"
-  },
-  {
-    "label": "Memes",
-    "message": "Memes: turnover 1.6x its recent average",
-    "ratio": 1.63,
-    "sector": "meme",
-    "type": "volume_surge",
-    "at": "2026-10-01T06:28:32Z"
   }
 ]
