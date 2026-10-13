@@ -1,5 +1,14 @@
 [
   {
+    "from": "Leading",
+    "label": "Layer 1",
+    "message": "Layer 1: Leading \u2192 Weakening",
+    "sector": "l1",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-13T07:27:49Z"
+  },
+  {
     "from": "Weakening",
     "label": "AI",
     "message": "AI: Weakening \u2192 Leading",
@@ -1743,14 +1752,6 @@
     "message": "Layer 2: turnover 1.6x its recent average",
     "ratio": 1.57,
     "sector": "l2",
-    "type": "volume_surge",
-    "at": "2026-10-01T06:28:32Z"
-  },
-  {
-    "label": "Gaming",
-    "message": "Gaming: turnover 1.5x its recent average",
-    "ratio": 1.53,
-    "sector": "gaming",
     "type": "volume_surge",
     "at": "2026-10-01T06:28:32Z"
   }
