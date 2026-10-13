@@ -1,0 +1,1221 @@
+{
+  "alerts": [
+    {
+      "from": "Lagging",
+      "label": "Memes",
+      "message": "Memes: Lagging \u2192 Weakening",
+      "sector": "meme",
+      "to": "Weakening",
+      "type": "quadrant_change"
+    }
+  ],
+  "benchmark": {
+    "primary": "ethereum",
+    "r24h": -0.3589,
+    "r30d": 0.8711,
+    "r7d": -7.0364
+  },
+  "credits_used": 48,
+  "generated_at": "2026-10-13T17:22:43Z",
+  "sectors": {
+    "ai": {
+      "breadth_24h": 25.641025641025642,
+      "breadth_30d": 84.61538461538461,
+      "breadth_7d": 46.15384615384615,
+      "category": "artificial-intelligence",
+      "excess_24h": -2.71614,
+      "excess_30d": 24.7835,
+      "excess_7d": -1.2622,
+      "key": "ai",
+      "label": "AI",
+      "laggards": [
+        {
+          "id": "ai-rig-complex",
+          "name": "AI Rig Complex",
+          "r7d": -53.805,
+          "symbol": "ARC"
+        },
+        {
+          "id": "talus",
+          "name": "Talus",
+          "r7d": -36.0715,
+          "symbol": "US"
+        },
+        {
+          "id": "kgen",
+          "name": "KGeN",
+          "r7d": -29.172,
+          "symbol": "KGEN"
+        }
+      ],
+      "market_cap": 20700831554.0,
+      "momentum": -1.2622,
+      "n_tokens": 39,
+      "onchain": {
+        "buy_share": 71.0,
+        "holder_growth_7d": 1.96,
+        "tokens": [
+          {
+            "buy_share": 91.7,
+            "buys_24h": 11,
+            "holder_growth_7d": 3.93,
+            "holders_7d_ago": 229,
+            "holders_now": 238,
+            "id": "quack-ai",
+            "network": "eth",
+            "pool_name": "Q / USDT 10.01%",
+            "pool_volume_24h_usd": 890.4598160341,
+            "reserve_usd": 1305.4913,
+            "sells_24h": 1,
+            "symbol": "Q"
+          },
+          {
+            "buy_share": 50.2,
+            "buys_24h": 1764,
+            "holder_growth_7d": -0.01,
+            "holders_7d_ago": 407772,
+            "holders_now": 407749,
+            "id": "magic",
+            "network": "arbitrum",
+            "pool_name": "MAGIC / WETH",
+            "pool_volume_24h_usd": 200854.224687907,
+            "reserve_usd": 302853.5653,
+            "sells_24h": 1749,
+            "symbol": "MAGIC"
+          }
+        ]
+      },
+      "quadrant": "Weakening",
+      "ret_24h_capw": -3.565325457078427,
+      "ret_24h_median": -3.07504,
+      "ret_30d_capw": 63.84392236543224,
+      "ret_30d_median": 25.6546,
+      "ret_7d_capw": -4.040806710026219,
+      "ret_7d_median": -8.2986,
+      "score": 43.9,
+      "score_parts": {
+        "breadth_7d": 42.9,
+        "dex_buy_share": 100.0,
+        "excess_24h": 0.0,
+        "holder_growth": 50.0,
+        "momentum_7d": 28.6,
+        "volume_surge": 71.4
+      },
+      "top_movers": [
+        {
+          "id": "quack-ai",
+          "image": "https://coin-images.coingecko.com/coins/images/68793/large/quack_ai.png?1756615808",
+          "market_cap": 195936507.0,
+          "name": "Quack AI",
+          "r24h": 34.22389,
+          "r30d": 67.362,
+          "r7d": 92.8322,
+          "symbol": "Q",
+          "volume": 27043709.0
+        },
+        {
+          "id": "magic",
+          "image": "https://coin-images.coingecko.com/coins/images/18623/large/magic.png?1696518095",
+          "market_cap": 42157057.0,
+          "name": "Treasure",
+          "r24h": 3.86537,
+          "r30d": 161.8591,
+          "r7d": 79.3112,
+          "symbol": "MAGIC",
+          "volume": 70339346.0
+        },
+        {
+          "id": "pearl-2",
+          "image": "https://coin-images.coingecko.com/coins/images/102173580/large/pearl.png?1780324634",
+          "market_cap": 650578992.0,
+          "name": "Pearl",
+          "r24h": 26.76915,
+          "r30d": 301.863,
+          "r7d": 65.2771,
+          "symbol": "PRL",
+          "volume": 9799502.0
+        },
+        {
+          "id": "iexec-rlc",
+          "image": "https://coin-images.coingecko.com/coins/images/646/large/pL1VuXm.png?1696501840",
+          "market_cap": 79284988.0,
+          "name": "iExec RLC",
+          "r24h": -6.55987,
+          "r30d": 224.6016,
+          "r7d": 12.0055,
+          "symbol": "RLC",
+          "volume": 27012895.0
+        },
+        {
+          "id": "walrus-2",
+          "image": "https://coin-images.coingecko.com/coins/images/54914/large/Walrus_Token_Full_Color_200x200.png?1772722407",
+          "market_cap": 99281483.0,
+          "name": "Walrus",
+          "r24h": 3.35567,
+          "r30d": 38.5285,
+          "r7d": 4.4744,
+          "symbol": "WAL",
+          "volume": 9508236.0
+        }
+      ],
+      "trend": 24.7835,
+      "turnover": 0.1336889927721403,
+      "volume_24h": 2767473320.0,
+      "volume_surge": 1.0203294503769882
+    },
+    "defi": {
+      "breadth_24h": 35.13513513513514,
+      "breadth_30d": 86.11111111111111,
+      "breadth_7d": 59.45945945945946,
+      "category": "decentralized-finance-defi",
+      "excess_24h": -0.92302,
+      "excess_30d": 27.9306,
+      "excess_7d": 0.7548000000000004,
+      "key": "defi",
+      "label": "DeFi",
+      "laggards": [
+        {
+          "id": "numeraire",
+          "name": "Numeraire",
+          "r7d": -26.3526,
+          "symbol": "NMR"
+        },
+        {
+          "id": "pump-fun",
+          "name": "Pump.fun",
+          "r7d": -20.8301,
+          "symbol": "PUMP"
+        },
+        {
+          "id": "thorchain",
+          "name": "THORChain",
+          "r7d": -14.0575,
+          "symbol": "RUNE"
+        }
+      ],
+      "market_cap": 62189207631.0,
+      "momentum": 0.7548000000000004,
+      "n_tokens": 37,
+      "onchain": {
+        "buy_share": 56.0,
+        "holder_growth_7d": -0.01,
+        "tokens": [
+          {
+            "buy_share": 57.0,
+            "buys_24h": 397,
+            "holder_growth_7d": 0.14,
+            "holders_7d_ago": 44235,
+            "holders_now": 44295,
+            "id": "origin-protocol",
+            "network": "eth",
+            "pool_name": "OGN / OETH",
+            "pool_volume_24h_usd": 1040290.69513697,
+            "reserve_usd": 1471246.6554,
+            "sells_24h": 300,
+            "symbol": "OGN"
+          },
+          {
+            "buy_share": 55.0,
+            "buys_24h": 4126,
+            "holder_growth_7d": -0.17,
+            "holders_7d_ago": 42570,
+            "holders_now": 42498,
+            "id": "bitway",
+            "network": "bsc",
+            "pool_name": "BTW / USDT 0.3%",
+            "pool_volume_24h_usd": 1300865.49351119,
+            "reserve_usd": 178728.3566,
+            "sells_24h": 3382,
+            "symbol": "BTW"
+          }
+        ]
+      },
+      "quadrant": "Leading",
+      "ret_24h_capw": -0.47455638093692387,
+      "ret_24h_median": -1.28192,
+      "ret_30d_capw": 32.80821876790082,
+      "ret_30d_median": 28.801699999999997,
+      "ret_7d_capw": -3.785951700842195,
+      "ret_7d_median": -6.2816,
+      "score": 71.1,
+      "score_parts": {
+        "breadth_7d": 71.4,
+        "dex_buy_share": 83.3,
+        "excess_24h": 71.4,
+        "holder_growth": 0.0,
+        "momentum_7d": 71.4,
+        "volume_surge": 85.7
+      },
+      "top_movers": [
+        {
+          "id": "origin-protocol",
+          "image": "https://coin-images.coingecko.com/coins/images/3296/large/op.jpg?1696504006",
+          "market_cap": 26783233.0,
+          "name": "Origin Token",
+          "r24h": 0.07222,
+          "r30d": 95.2395,
+          "r7d": 58.205,
+          "symbol": "OGN",
+          "volume": 102015505.0
+        },
+        {
+          "id": "bitway",
+          "image": "https://coin-images.coingecko.com/coins/images/71205/large/BTW_Token_200x200.png?1786291907",
+          "market_cap": 5233608365.0,
+          "name": "Bitway",
+          "r24h": 14.24905,
+          "r30d": 185.8081,
+          "r7d": 58.0883,
+          "symbol": "BTW",
+          "volume": 111346334.0
+        },
+        {
+          "id": "osmosis",
+          "image": "https://coin-images.coingecko.com/coins/images/16724/large/osmo.png?1696516298",
+          "market_cap": 31602319.0,
+          "name": "Osmosis",
+          "r24h": -7.45722,
+          "r30d": 25.092,
+          "r7d": 19.1421,
+          "symbol": "OSMO",
+          "volume": 37628140.0
+        },
+        {
+          "id": "meteora",
+          "image": "https://coin-images.coingecko.com/coins/images/69110/large/meteora.png?1757517561",
+          "market_cap": 215816863.0,
+          "name": "Meteora",
+          "r24h": 0.26273,
+          "r30d": 63.4803,
+          "r7d": 17.9456,
+          "symbol": "MET",
+          "volume": 37947210.0
+        },
+        {
+          "id": "reserve-rights-token",
+          "image": "https://coin-images.coingecko.com/coins/images/8365/large/RSR_Blue_Circle_1000.png?1721777856",
+          "market_cap": 127592313.0,
+          "name": "Reserve Rights",
+          "r24h": -9.83238,
+          "r30d": 33.7093,
+          "r7d": 16.7164,
+          "symbol": "RSR",
+          "volume": 51136737.0
+        }
+      ],
+      "trend": 27.9306,
+      "turnover": 0.08230370565854557,
+      "volume_24h": 5118402240.0,
+      "volume_surge": 1.0573104873462422
+    },
+    "depin": {
+      "breadth_24h": 25.0,
+      "breadth_30d": 88.88888888888889,
+      "breadth_7d": 44.44444444444444,
+      "category": "depin",
+      "excess_24h": -1.69533,
+      "excess_30d": 22.633250000000004,
+      "excess_7d": -0.7973999999999997,
+      "key": "depin",
+      "label": "DePIN",
+      "laggards": [
+        {
+          "id": "pha",
+          "name": "PHALA",
+          "r7d": -25.4393,
+          "symbol": "PHA"
+        },
+        {
+          "id": "spacecoin-2",
+          "name": "Spacecoin",
+          "r7d": -23.6761,
+          "symbol": "SPACE"
+        },
+        {
+          "id": "acurast",
+          "name": "Acurast",
+          "r7d": -22.2315,
+          "symbol": "ACU"
+        }
+      ],
+      "market_cap": 10003765856.0,
+      "momentum": -0.7973999999999997,
+      "n_tokens": 36,
+      "onchain": {
+        "buy_share": 50.1,
+        "holder_growth_7d": 11.17,
+        "tokens": [
+          {
+            "buy_share": 53.3,
+            "buys_24h": 179,
+            "holder_growth_7d": 4.25,
+            "holders_7d_ago": 1743,
+            "holders_now": 1817,
+            "id": "beldex",
+            "network": "bsc",
+            "pool_name": "bdx / WBNB 0.05%",
+            "pool_volume_24h_usd": 8640.1322364004,
+            "reserve_usd": 19146.9323,
+            "sells_24h": 157,
+            "symbol": "BDX"
+          },
+          {
+            "buy_share": 50.0,
+            "buys_24h": 4,
+            "holder_growth_7d": 29.15,
+            "holders_7d_ago": 518,
+            "holders_now": 669,
+            "id": "janction",
+            "network": "eth",
+            "pool_name": "JCT / USDT 3%",
+            "pool_volume_24h_usd": 781.8277071865,
+            "reserve_usd": 8373.2483,
+            "sells_24h": 4,
+            "symbol": "JCT"
+          },
+          {
+            "buy_share": 47.1,
+            "buys_24h": 16,
+            "holder_growth_7d": 0.11,
+            "holders_7d_ago": 26770,
+            "holders_now": 26800,
+            "id": "iexec-rlc",
+            "network": "eth",
+            "pool_name": "RLC / WETH 1%",
+            "pool_volume_24h_usd": 1374.2835872033,
+            "reserve_usd": 425793.8142,
+            "sells_24h": 18,
+            "symbol": "RLC"
+          }
+        ]
+      },
+      "quadrant": "Weakening",
+      "ret_24h_capw": -1.7791267981601424,
+      "ret_24h_median": -2.05423,
+      "ret_30d_capw": 30.95647680283678,
+      "ret_30d_median": 23.504350000000002,
+      "ret_7d_capw": -4.919733648493943,
+      "ret_7d_median": -7.8338,
+      "score": 36.0,
+      "score_parts": {
+        "breadth_7d": 28.6,
+        "dex_buy_share": 16.7,
+        "excess_24h": 42.9,
+        "holder_growth": 83.3,
+        "momentum_7d": 42.9,
+        "volume_surge": 28.6
+      },
+      "top_movers": [
+        {
+          "id": "beldex",
+          "image": "https://coin-images.coingecko.com/coins/images/5111/large/Beldex.png?1696505631",
+          "market_cap": 691926172.0,
+          "name": "Beldex",
+          "r24h": -0.05238,
+          "r30d": 13.5019,
+          "r7d": 17.5926,
+          "symbol": "BDX",
+          "volume": 3091642.0
+        },
+        {
+          "id": "janction",
+          "image": "https://coin-images.coingecko.com/coins/images/70608/large/janction.png?1762738430",
+          "market_cap": 21943543.0,
+          "name": "Janction",
+          "r24h": -0.67062,
+          "r30d": 29.1718,
+          "r7d": 13.0466,
+          "symbol": "JCT",
+          "volume": 2915310.0
+        },
+        {
+          "id": "iexec-rlc",
+          "image": "https://coin-images.coingecko.com/coins/images/646/large/pL1VuXm.png?1696501840",
+          "market_cap": 79284988.0,
+          "name": "iExec RLC",
+          "r24h": -6.55987,
+          "r30d": 224.6016,
+          "r7d": 12.0055,
+          "symbol": "RLC",
+          "volume": 27012895.0
+        },
+        {
+          "id": "impossible-cloud-network-token",
+          "image": "https://coin-images.coingecko.com/coins/images/55484/large/ICNT_token_%281%29_%281%29.png?1751614146",
+          "market_cap": 26589967.0,
+          "name": "Impossible Cloud Network Token",
+          "r24h": 4.59008,
+          "r30d": 8.5036,
+          "r7d": 7.1737,
+          "symbol": "ICNT",
+          "volume": 5258127.0
+        },
+        {
+          "id": "aioz-network",
+          "image": "https://coin-images.coingecko.com/coins/images/14631/large/aioz-logo-200.png?1696514309",
+          "market_cap": 148194497.0,
+          "name": "AIOZ Network",
+          "r24h": 1.48048,
+          "r30d": 57.7488,
+          "r7d": 5.1568,
+          "symbol": "AIOZ",
+          "volume": 7943965.0
+        }
+      ],
+      "trend": 22.633250000000004,
+      "turnover": 0.09419667968686211,
+      "volume_24h": 942321528.0,
+      "volume_surge": 0.9597682071103859
+    },
+    "gaming": {
+      "breadth_24h": 28.571428571428573,
+      "breadth_30d": 85.71428571428571,
+      "breadth_7d": 32.142857142857146,
+      "category": "gaming",
+      "excess_24h": -1.9319299999999997,
+      "excess_30d": 10.581999999999999,
+      "excess_7d": -1.8935499999999994,
+      "key": "gaming",
+      "label": "Gaming",
+      "laggards": [
+        {
+          "id": "carv",
+          "name": "CARV",
+          "r7d": -22.2555,
+          "symbol": "CARV"
+        },
+        {
+          "id": "cross-2",
+          "name": "ONEchain",
+          "r7d": -17.3737,
+          "symbol": "ONE"
+        },
+        {
+          "id": "big-time",
+          "name": "Big Time",
+          "r7d": -13.8448,
+          "symbol": "BIGTIME"
+        }
+      ],
+      "market_cap": 2531456789.0,
+      "momentum": -1.8935499999999994,
+      "n_tokens": 28,
+      "onchain": {
+        "buy_share": 46.8,
+        "holder_growth_7d": 0.07,
+        "tokens": [
+          {
+            "buy_share": 46.5,
+            "buys_24h": 347,
+            "holder_growth_7d": 0.03,
+            "holders_7d_ago": 48061,
+            "holders_now": 48074,
+            "id": "beam-2",
+            "network": "eth",
+            "pool_name": "BEAM / WETH",
+            "pool_volume_24h_usd": 450505.763979707,
+            "reserve_usd": 2772567.0905,
+            "sells_24h": 400,
+            "symbol": "BEAM"
+          },
+          {
+            "buy_share": 44.0,
+            "buys_24h": 133,
+            "holder_growth_7d": 0.12,
+            "holders_7d_ago": 31321,
+            "holders_now": 31360,
+            "id": "skale",
+            "network": "eth",
+            "pool_name": "SKL / ETH 1%",
+            "pool_volume_24h_usd": 147909.238064639,
+            "reserve_usd": 79086.6007,
+            "sells_24h": 169,
+            "symbol": "SKL"
+          },
+          {
+            "buy_share": 50.0,
+            "buys_24h": 1,
+            "holder_growth_7d": 0.06,
+            "holders_7d_ago": 14095,
+            "holders_now": 14103,
+            "id": "endurance",
+            "network": "bsc",
+            "pool_name": "ACE / USDT 0.259%",
+            "pool_volume_24h_usd": 242.4062982719,
+            "reserve_usd": 2292.681,
+            "sells_24h": 1,
+            "symbol": "ACE"
+          }
+        ]
+      },
+      "quadrant": "Weakening",
+      "ret_24h_capw": -2.1718133516254423,
+      "ret_24h_median": -2.2908299999999997,
+      "ret_30d_capw": 24.84134538272678,
+      "ret_30d_median": 11.4531,
+      "ret_7d_capw": -7.444046391181518,
+      "ret_7d_median": -8.92995,
+      "score": 15.1,
+      "score_parts": {
+        "breadth_7d": 14.3,
+        "dex_buy_share": 0.0,
+        "excess_24h": 14.3,
+        "holder_growth": 16.7,
+        "momentum_7d": 14.3,
+        "volume_surge": 42.9
+      },
+      "top_movers": [
+        {
+          "id": "beam-2",
+          "image": "https://coin-images.coingecko.com/coins/images/32417/large/cgicon.png?1747892021",
+          "market_cap": 144085725.0,
+          "name": "Beam",
+          "r24h": 0.81358,
+          "r30d": 64.219,
+          "r7d": 11.8006,
+          "symbol": "BEAM",
+          "volume": 18896770.0
+        },
+        {
+          "id": "skale",
+          "image": "https://coin-images.coingecko.com/coins/images/13245/large/SKALE_token_300x300.png?1696513021",
+          "market_cap": 32169132.0,
+          "name": "SKALE",
+          "r24h": 0.75659,
+          "r30d": 40.2729,
+          "r7d": 10.7666,
+          "symbol": "SKL",
+          "volume": 53008964.0
+        },
+        {
+          "id": "endurance",
+          "image": "https://coin-images.coingecko.com/coins/images/33528/large/ACE.png?1702254943",
+          "market_cap": 21885823.0,
+          "name": "Fusionist",
+          "r24h": 5.14613,
+          "r30d": 30.2719,
+          "r7d": 0.3703,
+          "symbol": "ACE",
+          "volume": 13891399.0
+        },
+        {
+          "id": "four",
+          "image": "https://coin-images.coingecko.com/coins/images/54912/large/four.jpg?1742461445",
+          "market_cap": 103637299.0,
+          "name": "Four",
+          "r24h": -4.13226,
+          "r30d": 15.3906,
+          "r7d": -1.0102,
+          "symbol": "FORM",
+          "volume": 4634523.0
+        },
+        {
+          "id": "immutable-x",
+          "image": "https://coin-images.coingecko.com/coins/images/17233/large/immutableX-symbol-BLK-RGB.png?1696516787",
+          "market_cap": 160138499.0,
+          "name": "Immutable",
+          "r24h": -1.75084,
+          "r30d": 43.5316,
+          "r7d": -2.1045,
+          "symbol": "IMX",
+          "volume": 8962998.0
+        }
+      ],
+      "trend": 10.581999999999999,
+      "turnover": 0.129311446445551,
+      "volume_24h": 327346339.0,
+      "volume_surge": 0.9895949391044703
+    },
+    "l1": {
+      "breadth_24h": 35.0,
+      "breadth_30d": 92.5,
+      "breadth_7d": 47.5,
+      "category": "layer-1",
+      "excess_24h": -0.6756500000000001,
+      "excess_30d": 16.9465,
+      "excess_7d": -0.4038000000000004,
+      "key": "l1",
+      "label": "Layer 1",
+      "laggards": [
+        {
+          "id": "monad",
+          "name": "Monad",
+          "r7d": -15.252,
+          "symbol": "MON"
+        },
+        {
+          "id": "thorchain",
+          "name": "THORChain",
+          "r7d": -14.0575,
+          "symbol": "RUNE"
+        },
+        {
+          "id": "sei-network",
+          "name": "Sei",
+          "r7d": -13.4112,
+          "symbol": "SEI"
+        }
+      ],
+      "market_cap": 2372062311448.0,
+      "momentum": -0.4038000000000004,
+      "n_tokens": 40,
+      "onchain": {
+        "buy_share": null,
+        "holder_growth_7d": null,
+        "tokens": []
+      },
+      "quadrant": "Weakening",
+      "ret_24h_capw": 0.3473013670905553,
+      "ret_24h_median": -1.03455,
+      "ret_30d_capw": 7.160089758001324,
+      "ret_30d_median": 17.8176,
+      "ret_7d_capw": -4.1856202432710905,
+      "ret_7d_median": -7.440200000000001,
+      "score": 67.9,
+      "score_parts": {
+        "breadth_7d": 57.1,
+        "excess_24h": 85.7,
+        "momentum_7d": 57.1,
+        "volume_surge": 100.0
+      },
+      "top_movers": [
+        {
+          "id": "sonic-3",
+          "image": "https://coin-images.coingecko.com/coins/images/38108/large/200x200_Sonic_Logo.png?1734679256",
+          "market_cap": 221004054.0,
+          "name": "Sonic",
+          "r24h": 0.11698,
+          "r30d": 116.2328,
+          "r7d": 30.5055,
+          "symbol": "S",
+          "volume": 196542002.0
+        },
+        {
+          "id": "celestia",
+          "image": "https://coin-images.coingecko.com/coins/images/31967/large/tia.jpg?1696530772",
+          "market_cap": 564729763.0,
+          "name": "Celestia",
+          "r24h": 4.76141,
+          "r30d": 62.4016,
+          "r7d": 20.6794,
+          "symbol": "TIA",
+          "volume": 151618624.0
+        },
+        {
+          "id": "kaia",
+          "image": "https://coin-images.coingecko.com/coins/images/39901/large/KAIA.png?1724734368",
+          "market_cap": 300558015.0,
+          "name": "Kaia",
+          "r24h": 1.34561,
+          "r30d": 55.2097,
+          "r7d": 19.2844,
+          "symbol": "KAIA",
+          "volume": 53890455.0
+        },
+        {
+          "id": "dusk-network",
+          "image": "https://coin-images.coingecko.com/coins/images/5217/large/image_widget_biddfvxd454b1.png?1696505726",
+          "market_cap": 58905967.0,
+          "name": "DUSK",
+          "r24h": 9.92301,
+          "r30d": 34.0528,
+          "r7d": 12.8552,
+          "symbol": "DUSK",
+          "volume": 22100985.0
+        },
+        {
+          "id": "plume",
+          "image": "https://coin-images.coingecko.com/coins/images/53623/large/PLUME_%281%29.png?1786085730",
+          "market_cap": 137789213.0,
+          "name": "Plume",
+          "r24h": -1.55966,
+          "r30d": 57.3919,
+          "r7d": 11.4204,
+          "symbol": "PLUME",
+          "volume": 26843539.0
+        }
+      ],
+      "trend": 16.9465,
+      "turnover": 0.02621326990269627,
+      "volume_24h": 62179509596.0,
+      "volume_surge": 1.0600645153983064
+    },
+    "l2": {
+      "breadth_24h": 35.294117647058826,
+      "breadth_30d": 79.41176470588235,
+      "breadth_7d": 70.58823529411765,
+      "category": "layer-2",
+      "excess_24h": -1.455335,
+      "excess_30d": 24.30345,
+      "excess_7d": 9.655750000000001,
+      "key": "l2",
+      "label": "Layer 2",
+      "laggards": [
+        {
+          "id": "pha",
+          "name": "PHALA",
+          "r7d": -25.4393,
+          "symbol": "PHA"
+        },
+        {
+          "id": "lisk",
+          "name": "Lisk",
+          "r7d": -18.6636,
+          "symbol": "LSK"
+        },
+        {
+          "id": "mantle",
+          "name": "Mantle",
+          "r7d": -15.0557,
+          "symbol": "MNT"
+        }
+      ],
+      "market_cap": 10440077347.0,
+      "momentum": 9.655750000000001,
+      "n_tokens": 34,
+      "onchain": {
+        "buy_share": 50.6,
+        "holder_growth_7d": 2.32,
+        "tokens": [
+          {
+            "buy_share": 50.2,
+            "buys_24h": 1764,
+            "holder_growth_7d": -0.01,
+            "holders_7d_ago": 407772,
+            "holders_now": 407749,
+            "id": "magic",
+            "network": "arbitrum",
+            "pool_name": "MAGIC / WETH",
+            "pool_volume_24h_usd": 200854.224687907,
+            "reserve_usd": 302853.5653,
+            "sells_24h": 1749,
+            "symbol": "MAGIC"
+          },
+          {
+            "buy_share": 48.6,
+            "buys_24h": 771,
+            "holder_growth_7d": 4.08,
+            "holders_7d_ago": 35797,
+            "holders_now": 37259,
+            "id": "starknet",
+            "network": "eth",
+            "pool_name": "STRK / USDC 0.25%",
+            "pool_volume_24h_usd": 1842609.54412535,
+            "reserve_usd": 494045.3703,
+            "sells_24h": 814,
+            "symbol": "STRK"
+          },
+          {
+            "buy_share": 52.9,
+            "buys_24h": 18,
+            "holder_growth_7d": 2.89,
+            "holders_7d_ago": 1178,
+            "holders_now": 1212,
+            "id": "zksync",
+            "network": "eth",
+            "pool_name": "ZK / ETH 1%",
+            "pool_volume_24h_usd": 2031.4362901406,
+            "reserve_usd": 5784.5389,
+            "sells_24h": 16,
+            "symbol": "ZK"
+          }
+        ]
+      },
+      "quadrant": "Leading",
+      "ret_24h_capw": -1.119786774604841,
+      "ret_24h_median": -1.814235,
+      "ret_30d_capw": 36.459848163625864,
+      "ret_30d_median": 25.17455,
+      "ret_7d_capw": -0.6051244919348487,
+      "ret_7d_median": 2.61935,
+      "score": 73.3,
+      "score_parts": {
+        "breadth_7d": 100.0,
+        "dex_buy_share": 33.3,
+        "excess_24h": 57.1,
+        "holder_growth": 66.7,
+        "momentum_7d": 100.0,
+        "volume_surge": 14.3
+      },
+      "top_movers": [
+        {
+          "id": "magic",
+          "image": "https://coin-images.coingecko.com/coins/images/18623/large/magic.png?1696518095",
+          "market_cap": 42157057.0,
+          "name": "Treasure",
+          "r24h": 3.86537,
+          "r30d": 161.8591,
+          "r7d": 79.3112,
+          "symbol": "MAGIC",
+          "volume": 70339346.0
+        },
+        {
+          "id": "starknet",
+          "image": "https://coin-images.coingecko.com/coins/images/26433/large/starknet.png?1696525507",
+          "market_cap": 631324479.0,
+          "name": "Starknet",
+          "r24h": -10.5357,
+          "r30d": 194.1234,
+          "r7d": 60.9598,
+          "symbol": "STRK",
+          "volume": 301615930.0
+        },
+        {
+          "id": "zksync",
+          "image": "https://coin-images.coingecko.com/coins/images/38043/large/ZKTokenBlack.png?1718614502",
+          "market_cap": 170673413.0,
+          "name": "ZKsync",
+          "r24h": 7.16208,
+          "r30d": 68.6962,
+          "r7d": 21.6145,
+          "symbol": "ZK",
+          "volume": 64025929.0
+        },
+        {
+          "id": "aztec",
+          "image": "https://coin-images.coingecko.com/coins/images/70681/large/aztec.png?1763091883",
+          "market_cap": 60786113.0,
+          "name": "Aztec",
+          "r24h": 9.97497,
+          "r30d": 44.7913,
+          "r7d": 20.3273,
+          "symbol": "AZTEC",
+          "volume": 15109454.0
+        },
+        {
+          "id": "nervos-network",
+          "image": "https://coin-images.coingecko.com/coins/images/9566/large/Nervos_White.png?1696509646",
+          "market_cap": 78894455.0,
+          "name": "Nervos Network",
+          "r24h": -0.54524,
+          "r30d": 32.9228,
+          "r7d": 17.7893,
+          "symbol": "CKB",
+          "volume": 23530457.0
+        }
+      ],
+      "trend": 24.30345,
+      "turnover": 0.13010430831628972,
+      "volume_24h": 1358299042.0,
+      "volume_surge": 0.9434491896475262
+    },
+    "meme": {
+      "breadth_24h": 18.75,
+      "breadth_30d": 53.125,
+      "breadth_7d": 12.5,
+      "category": "meme-token",
+      "excess_24h": -1.88887,
+      "excess_30d": 0.27259999999999995,
+      "excess_7d": -5.053850000000001,
+      "key": "meme",
+      "label": "Memes",
+      "laggards": [
+        {
+          "id": "artificial-inu-3",
+          "name": "Artificial Inu",
+          "r7d": -30.0602,
+          "symbol": "AI"
+        },
+        {
+          "id": "cash-cat",
+          "name": "Cash Cat",
+          "r7d": -29.9124,
+          "symbol": "CASHCAT"
+        },
+        {
+          "id": "marscoin-4",
+          "name": "MarsCoin",
+          "r7d": -27.3106,
+          "symbol": "MARSCOIN"
+        }
+      ],
+      "market_cap": 24582225134.0,
+      "momentum": -5.053850000000001,
+      "n_tokens": 32,
+      "onchain": {
+        "buy_share": 54.2,
+        "holder_growth_7d": 1.0,
+        "tokens": [
+          {
+            "buy_share": 57.4,
+            "buys_24h": 2261,
+            "holder_growth_7d": 3.22,
+            "holders_7d_ago": 100931,
+            "holders_now": 104179,
+            "id": "bianrensheng",
+            "network": "bsc",
+            "pool_name": "\u5e01\u5b89\u4eba\u751f / WBNB",
+            "pool_volume_24h_usd": 1119116.05437641,
+            "reserve_usd": 8228568.5877,
+            "sells_24h": 1678,
+            "symbol": "\u5e01\u5b89\u4eba\u751f"
+          },
+          {
+            "buy_share": 54.8,
+            "buys_24h": 461,
+            "holder_growth_7d": 0.16,
+            "holders_7d_ago": 593574,
+            "holders_now": 594517,
+            "id": "pepe",
+            "network": "eth",
+            "pool_name": "PEPE / WETH",
+            "pool_volume_24h_usd": 1539455.2154541,
+            "reserve_usd": 30196877.2479,
+            "sells_24h": 380,
+            "symbol": "PEPE"
+          },
+          {
+            "buy_share": 50.4,
+            "buys_24h": 2317,
+            "holder_growth_7d": -0.38,
+            "holders_7d_ago": 64811,
+            "holders_now": 64564,
+            "id": "niu-lai",
+            "network": "bsc",
+            "pool_name": "\u725b\u6765 / USDT 0.25%",
+            "pool_volume_24h_usd": 1097681.2738539,
+            "reserve_usd": 651602.6122,
+            "sells_24h": 2282,
+            "symbol": "\u725b\u6765"
+          }
+        ]
+      },
+      "quadrant": "Weakening",
+      "ret_24h_capw": -1.365039179450587,
+      "ret_24h_median": -2.24777,
+      "ret_30d_capw": 5.942198195021596,
+      "ret_30d_median": 1.1437,
+      "ret_7d_capw": -11.58143185755621,
+      "ret_7d_median": -12.090250000000001,
+      "score": 21.7,
+      "score_parts": {
+        "breadth_7d": 0.0,
+        "dex_buy_share": 66.7,
+        "excess_24h": 28.6,
+        "holder_growth": 33.3,
+        "momentum_7d": 0.0,
+        "volume_surge": 57.1
+      },
+      "top_movers": [
+        {
+          "id": "bianrensheng",
+          "image": "https://coin-images.coingecko.com/coins/images/69848/large/%E5%B8%81%E5%AE%89%E4%BA%BA%E7%94%9F.png?1759839225",
+          "market_cap": 524069420.0,
+          "name": "\u5e01\u5b89\u4eba\u751f (BinanceLife)",
+          "r24h": -8.68243,
+          "r30d": 12.4253,
+          "r7d": 7.2494,
+          "symbol": "\u5e01\u5b89\u4eba\u751f",
+          "volume": 8078972.0
+        },
+        {
+          "id": "pepe",
+          "image": "https://coin-images.coingecko.com/coins/images/29850/large/pepe-token.jpeg?1696528776",
+          "market_cap": 1759184710.0,
+          "name": "Pepe",
+          "r24h": 1.84705,
+          "r30d": 23.7893,
+          "r7d": -2.3353,
+          "symbol": "PEPE",
+          "volume": 313231780.0
+        },
+        {
+          "id": "niu-lai",
+          "image": "https://coin-images.coingecko.com/coins/images/102175567/large/niulai.webp?1786873800",
+          "market_cap": 75481959.0,
+          "name": "\u725b\u6765 (Niu Lai)",
+          "r24h": 5.24968,
+          "r30d": -35.0666,
+          "r7d": -3.2332,
+          "symbol": "\u725b\u6765",
+          "volume": 10075765.0
+        },
+        {
+          "id": "official-trump",
+          "image": "https://coin-images.coingecko.com/coins/images/53746/large/trump.png?1737171561",
+          "market_cap": 537463660.0,
+          "name": "Official Trump",
+          "r24h": 0.37473,
+          "r30d": -1.9266,
+          "r7d": -4.6032,
+          "symbol": "TRUMP",
+          "volume": 175892341.0
+        },
+        {
+          "id": "giggle-fund",
+          "image": "https://coin-images.coingecko.com/coins/images/69414/large/giggle-fund.jpg?1758541887",
+          "market_cap": 35147886.0,
+          "name": "Giggle Fund",
+          "r24h": -1.04807,
+          "r30d": 2.7889,
+          "r7d": -7.2614,
+          "symbol": "GIGGLE",
+          "volume": 5444459.0
+        }
+      ],
+      "trend": 0.27259999999999995,
+      "turnover": 0.08494138088061007,
+      "volume_24h": 2088048148.0,
+      "volume_surge": 1.0050833688132517
+    },
+    "rwa": {
+      "breadth_24h": 50.0,
+      "breadth_30d": 77.77777777777777,
+      "breadth_7d": 67.85714285714286,
+      "category": "real-world-assets-rwa",
+      "excess_24h": -0.049004999999999965,
+      "excess_30d": 12.3676,
+      "excess_7d": 6.299650000000001,
+      "key": "rwa",
+      "label": "RWA",
+      "laggards": [
+        {
+          "id": "quant-network",
+          "name": "Quant",
+          "r7d": -21.6921,
+          "symbol": "QNT"
+        },
+        {
+          "id": "sandisk-bstocks-tokenized-stock",
+          "name": "SanDisk (bStocks Tokenized Stock)",
+          "r7d": -13.0134,
+          "symbol": "SNDKB"
+        },
+        {
+          "id": "micron-technology-bstock",
+          "name": "Micron Technology (bStocks Tokenized Stock)",
+          "r7d": -11.7902,
+          "symbol": "MUB"
+        }
+      ],
+      "market_cap": 56074886036.0,
+      "momentum": 6.299650000000001,
+      "n_tokens": 28,
+      "onchain": {
+        "buy_share": 51.6,
+        "holder_growth_7d": 453.78,
+        "tokens": [
+          {
+            "buy_share": 53.9,
+            "buys_24h": 6401,
+            "holder_growth_7d": 1362.71,
+            "holders_7d_ago": 3175,
+            "holders_now": 46441,
+            "id": "sharex-2",
+            "network": "bsc",
+            "pool_name": "SHARE / USDT 0.007%",
+            "pool_volume_24h_usd": 11897246.8163849,
+            "reserve_usd": 3996790.5732,
+            "sells_24h": 5467,
+            "symbol": "SHARE"
+          },
+          {
+            "buy_share": 52.5,
+            "buys_24h": 217,
+            "holder_growth_7d": -1.54,
+            "holders_7d_ago": 37538,
+            "holders_now": 36961,
+            "id": "reserve-rights-token",
+            "network": "eth",
+            "pool_name": "ETH+ / eUSD / RSR",
+            "pool_volume_24h_usd": 560459.8806292866,
+            "reserve_usd": 1475426.0461,
+            "sells_24h": 196,
+            "symbol": "RSR"
+          },
+          {
+            "buy_share": 48.5,
+            "buys_24h": 396,
+            "holder_growth_7d": 0.18,
+            "holders_7d_ago": 19989,
+            "holders_now": 20025,
+            "id": "dusk-network",
+            "network": "eth",
+            "pool_name": "DUSK / USDT 0.3%",
+            "pool_volume_24h_usd": 195706.868294458,
+            "reserve_usd": 297707.7694,
+            "sells_24h": 420,
+            "symbol": "DUSK"
+          }
+        ]
+      },
+      "quadrant": "Leading",
+      "ret_24h_capw": -1.7063095851727463,
+      "ret_24h_median": -0.40790499999999996,
+      "ret_30d_capw": 20.431540191506965,
+      "ret_30d_median": 13.2387,
+      "ret_7d_capw": -2.6839545646532876,
+      "ret_7d_median": -0.73675,
+      "score": 74.6,
+      "score_parts": {
+        "breadth_7d": 85.7,
+        "dex_buy_share": 50.0,
+        "excess_24h": 100.0,
+        "holder_growth": 100.0,
+        "momentum_7d": 85.7,
+        "volume_surge": 0.0
+      },
+      "top_movers": [
+        {
+          "id": "sharex-2",
+          "image": "https://coin-images.coingecko.com/coins/images/102173168/large/sharex.jpg?1778226833",
+          "market_cap": 43309422.0,
+          "name": "ShareX",
+          "r24h": -1.36119,
+          "r30d": 392.7946,
+          "r7d": 237.8468,
+          "symbol": "SHARE",
+          "volume": 12644457.0
+        },
+        {
+          "id": "reserve-rights-token",
+          "image": "https://coin-images.coingecko.com/coins/images/8365/large/RSR_Blue_Circle_1000.png?1721777856",
+          "market_cap": 127592313.0,
+          "name": "Reserve Rights",
+          "r24h": -9.83238,
+          "r30d": 33.7093,
+          "r7d": 16.7164,
+          "symbol": "RSR",
+          "volume": 51136737.0
+        },
+        {
+          "id": "dusk-network",
+          "image": "https://coin-images.coingecko.com/coins/images/5217/large/image_widget_biddfvxd454b1.png?1696505726",
+          "market_cap": 58905967.0,
+          "name": "DUSK",
+          "r24h": 9.92301,
+          "r30d": 34.0528,
+          "r7d": 12.8552,
+          "symbol": "DUSK",
+          "volume": 22100985.0
+        },
+        {
+          "id": "plume",
+          "image": "https://coin-images.coingecko.com/coins/images/53623/large/PLUME_%281%29.png?1786085730",
+          "market_cap": 137789213.0,
+          "name": "Plume",
+          "r24h": -1.55966,
+          "r30d": 57.3919,
+          "r7d": 11.4204,
+          "symbol": "PLUME",
+          "volume": 26843539.0
+        },
+        {
+          "id": "lumia",
+          "image": "https://coin-images.coingecko.com/coins/images/50867/large/lumia.jpg?1729321993",
+          "market_cap": 23431581.0,
+          "name": "Lumia",
+          "r24h": -10.07626,
+          "r30d": 31.1586,
+          "r7d": 5.2134,
+          "symbol": "LUMIA",
+          "volume": 15428963.0
+        }
+      ],
+      "trend": 12.3676,
+      "turnover": 0.03396110021119616,
+      "volume_24h": 1904364824.0,
+      "volume_surge": 0.6145251012961399
+    }
+  }
+}
