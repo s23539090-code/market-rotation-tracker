@@ -1,6 +1,15 @@
 [
   {
     "from": "Leading",
+    "label": "AI",
+    "message": "AI: Leading \u2192 Weakening",
+    "sector": "ai",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-14T09:34:35Z"
+  },
+  {
+    "from": "Leading",
     "label": "Gaming",
     "message": "Gaming: Leading \u2192 Weakening",
     "sector": "gaming",
@@ -1753,14 +1762,6 @@
     "sector": "l2",
     "to": "Leading",
     "type": "quadrant_change",
-    "at": "2026-10-02T11:21:02Z"
-  },
-  {
-    "label": "Gaming",
-    "message": "Gaming: turnover 1.9x its recent average",
-    "ratio": 1.95,
-    "sector": "gaming",
-    "type": "volume_surge",
     "at": "2026-10-02T11:21:02Z"
   }
 ]
