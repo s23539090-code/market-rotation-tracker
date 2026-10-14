@@ -1,6 +1,42 @@
 [
   {
     "from": "Weakening",
+    "label": "AI",
+    "message": "AI: Weakening \u2192 Leading",
+    "sector": "ai",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-14T11:34:18Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Memes",
+    "message": "Memes: Lagging \u2192 Weakening",
+    "sector": "meme",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-14T11:34:18Z"
+  },
+  {
+    "from": "Leading",
+    "label": "Layer 1",
+    "message": "Layer 1: Leading \u2192 Weakening",
+    "sector": "l1",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-14T11:34:18Z"
+  },
+  {
+    "from": "Weakening",
+    "label": "DePIN",
+    "message": "DePIN: Weakening \u2192 Leading",
+    "sector": "depin",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-14T11:34:18Z"
+  },
+  {
+    "from": "Weakening",
     "label": "Layer 1",
     "message": "Layer 1: Weakening \u2192 Leading",
     "sector": "l1",
@@ -1730,38 +1766,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-02T13:23:18Z"
-  },
-  {
-    "label": "Gaming",
-    "message": "Gaming: turnover 2.3x its recent average",
-    "ratio": 2.32,
-    "sector": "gaming",
-    "type": "volume_surge",
-    "at": "2026-10-02T13:23:18Z"
-  },
-  {
-    "from": "Leading",
-    "label": "Layer 2",
-    "message": "Layer 2: Leading \u2192 Weakening",
-    "sector": "l2",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-02T12:26:51Z"
-  },
-  {
-    "label": "Gaming",
-    "message": "Gaming: turnover 2.3x its recent average",
-    "ratio": 2.26,
-    "sector": "gaming",
-    "type": "volume_surge",
-    "at": "2026-10-02T12:26:51Z"
-  },
-  {
-    "label": "RWA",
-    "message": "RWA: turnover 1.5x its recent average",
-    "ratio": 1.55,
-    "sector": "rwa",
-    "type": "volume_surge",
-    "at": "2026-10-02T11:21:02Z"
   }
 ]
