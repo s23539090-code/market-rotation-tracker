@@ -1,5 +1,22 @@
 [
   {
+    "from": "Leading",
+    "label": "RWA",
+    "message": "RWA: Leading \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-15T10:34:51Z"
+  },
+  {
+    "label": "RWA",
+    "message": "RWA: turnover 2.0x its recent average",
+    "ratio": 2.01,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-15T10:34:51Z"
+  },
+  {
     "label": "RWA",
     "message": "RWA: turnover 2.1x its recent average",
     "ratio": 2.06,
@@ -1761,22 +1778,5 @@
     "sector": "gaming",
     "type": "volume_surge",
     "at": "2026-10-03T03:25:55Z"
-  },
-  {
-    "from": "Lagging",
-    "label": "Memes",
-    "message": "Memes: Lagging \u2192 Weakening",
-    "sector": "meme",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-03T02:22:02Z"
-  },
-  {
-    "label": "Gaming",
-    "message": "Gaming: turnover 1.8x its recent average",
-    "ratio": 1.76,
-    "sector": "gaming",
-    "type": "volume_surge",
-    "at": "2026-10-03T02:22:02Z"
   }
 ]
