@@ -1,6 +1,24 @@
 [
   {
     "from": "Weakening",
+    "label": "AI",
+    "message": "AI: Weakening \u2192 Leading",
+    "sector": "ai",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-16T16:32:50Z"
+  },
+  {
+    "from": "Weakening",
+    "label": "RWA",
+    "message": "RWA: Weakening \u2192 Lagging",
+    "sector": "rwa",
+    "to": "Lagging",
+    "type": "quadrant_change",
+    "at": "2026-10-16T16:32:50Z"
+  },
+  {
+    "from": "Weakening",
     "label": "Layer 1",
     "message": "Layer 1: Weakening \u2192 Leading",
     "sector": "l1",
@@ -1764,22 +1782,5 @@
     "to": "Weakening",
     "type": "quadrant_change",
     "at": "2026-10-05T23:18:50Z"
-  },
-  {
-    "label": "Layer 1",
-    "message": "Layer 1: turnover 1.5x its recent average",
-    "ratio": 1.51,
-    "sector": "l1",
-    "type": "volume_surge",
-    "at": "2026-10-05T17:20:53Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "Layer 1",
-    "message": "Layer 1: Weakening \u2192 Leading",
-    "sector": "l1",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-05T16:23:55Z"
   }
 ]
