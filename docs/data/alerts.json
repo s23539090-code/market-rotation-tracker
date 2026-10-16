@@ -1,5 +1,23 @@
 [
   {
+    "from": "Leading",
+    "label": "AI",
+    "message": "AI: Leading \u2192 Weakening",
+    "sector": "ai",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-16T22:30:40Z"
+  },
+  {
+    "from": "Leading",
+    "label": "Layer 1",
+    "message": "Layer 1: Leading \u2192 Weakening",
+    "sector": "l1",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-16T22:30:40Z"
+  },
+  {
     "from": "Weakening",
     "label": "AI",
     "message": "AI: Weakening \u2192 Leading",
@@ -1764,23 +1782,5 @@
     "to": "Improving",
     "type": "quadrant_change",
     "at": "2026-10-06T18:24:04Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "Layer 2",
-    "message": "Layer 2: Weakening \u2192 Leading",
-    "sector": "l2",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-06T17:20:00Z"
-  },
-  {
-    "from": "Leading",
-    "label": "Layer 2",
-    "message": "Layer 2: Leading \u2192 Weakening",
-    "sector": "l2",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-06T16:24:22Z"
   }
 ]
