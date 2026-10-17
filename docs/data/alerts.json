@@ -1,5 +1,14 @@
 [
   {
+    "from": "Lagging",
+    "label": "RWA",
+    "message": "RWA: Lagging \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-17T22:26:33Z"
+  },
+  {
     "from": "Weakening",
     "label": "RWA",
     "message": "RWA: Weakening \u2192 Lagging",
@@ -1773,14 +1782,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-07T11:22:09Z"
-  },
-  {
-    "from": "Leading",
-    "label": "DeFi",
-    "message": "DeFi: Leading \u2192 Weakening",
-    "sector": "defi",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-07T10:23:09Z"
   }
 ]
