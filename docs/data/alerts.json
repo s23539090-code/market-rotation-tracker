@@ -1,5 +1,14 @@
 [
   {
+    "from": "Lagging",
+    "label": "RWA",
+    "message": "RWA: Lagging \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-18T12:33:27Z"
+  },
+  {
     "from": "Weakening",
     "label": "RWA",
     "message": "RWA: Weakening \u2192 Lagging",
@@ -1774,13 +1783,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-07T13:24:43Z"
-  },
-  {
-    "label": "RWA",
-    "message": "RWA: turnover 1.5x its recent average",
-    "ratio": 1.51,
-    "sector": "rwa",
-    "type": "volume_surge",
-    "at": "2026-10-07T12:30:01Z"
   }
 ]
