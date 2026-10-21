@@ -1,6 +1,15 @@
 [
   {
     "from": "Leading",
+    "label": "Layer 1",
+    "message": "Layer 1: Leading \u2192 Weakening",
+    "sector": "l1",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-21T01:37:57Z"
+  },
+  {
+    "from": "Leading",
     "label": "AI",
     "message": "AI: Leading \u2192 Weakening",
     "sector": "ai",
@@ -1780,14 +1789,6 @@
     "sector": "meme",
     "to": "Improving",
     "type": "quadrant_change",
-    "at": "2026-10-09T20:20:38Z"
-  },
-  {
-    "delta": 25.7,
-    "label": "Memes",
-    "message": "Memes: breadth jumped 26 pts (27% \u2192 53%)",
-    "sector": "meme",
-    "type": "breadth_jump",
     "at": "2026-10-09T20:20:38Z"
   }
 ]
