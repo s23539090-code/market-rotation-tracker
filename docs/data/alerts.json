@@ -1,5 +1,14 @@
 [
   {
+    "from": "Lagging",
+    "label": "Layer 1",
+    "message": "Layer 1: Lagging \u2192 Weakening",
+    "sector": "l1",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-24T19:27:39Z"
+  },
+  {
     "from": "Leading",
     "label": "DeFi",
     "message": "DeFi: Leading \u2192 Weakening",
@@ -1777,14 +1786,6 @@
     "sector": "l1",
     "to": "Leading",
     "type": "quadrant_change",
-    "at": "2026-10-14T03:32:15Z"
-  },
-  {
-    "label": "Layer 1",
-    "message": "Layer 1: turnover 43.6x its recent average",
-    "ratio": 43.59,
-    "sector": "l1",
-    "type": "volume_surge",
     "at": "2026-10-14T03:32:15Z"
   }
 ]
