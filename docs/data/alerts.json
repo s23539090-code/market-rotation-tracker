@@ -1,5 +1,14 @@
 [
   {
+    "from": "Leading",
+    "label": "RWA",
+    "message": "RWA: Leading \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-25T08:30:48Z"
+  },
+  {
     "from": "Weakening",
     "label": "RWA",
     "message": "RWA: Weakening \u2192 Leading",
@@ -1778,15 +1787,6 @@
     "message": "AI: Weakening \u2192 Leading",
     "sector": "ai",
     "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-14T11:34:18Z"
-  },
-  {
-    "from": "Lagging",
-    "label": "Memes",
-    "message": "Memes: Lagging \u2192 Weakening",
-    "sector": "meme",
-    "to": "Weakening",
     "type": "quadrant_change",
     "at": "2026-10-14T11:34:18Z"
   }
