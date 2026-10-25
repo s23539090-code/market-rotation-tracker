@@ -1,5 +1,23 @@
 [
   {
+    "from": "Leading",
+    "label": "RWA",
+    "message": "RWA: Leading \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-25T21:28:14Z"
+  },
+  {
+    "from": "Weakening",
+    "label": "DePIN",
+    "message": "DePIN: Weakening \u2192 Leading",
+    "sector": "depin",
+    "to": "Leading",
+    "type": "quadrant_change",
+    "at": "2026-10-25T21:28:14Z"
+  },
+  {
     "from": "Weakening",
     "label": "RWA",
     "message": "RWA: Weakening \u2192 Leading",
@@ -1771,23 +1789,5 @@
     "to": "Weakening",
     "type": "quadrant_change",
     "at": "2026-10-14T19:35:35Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "AI",
-    "message": "AI: Weakening \u2192 Leading",
-    "sector": "ai",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-14T18:40:03Z"
-  },
-  {
-    "from": "Lagging",
-    "label": "Memes",
-    "message": "Memes: Lagging \u2192 Weakening",
-    "sector": "meme",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-14T17:34:04Z"
   }
 ]
