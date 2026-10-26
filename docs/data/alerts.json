@@ -2,6 +2,23 @@
   {
     "label": "RWA",
     "message": "RWA: turnover 1.6x its recent average",
+    "ratio": 1.6,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-26T16:47:10Z"
+  },
+  {
+    "from": "Improving",
+    "label": "Layer 1",
+    "message": "Layer 1: Improving \u2192 Lagging",
+    "sector": "l1",
+    "to": "Lagging",
+    "type": "quadrant_change",
+    "at": "2026-10-26T16:47:10Z"
+  },
+  {
+    "label": "RWA",
+    "message": "RWA: turnover 1.6x its recent average",
     "ratio": 1.61,
     "sector": "rwa",
     "type": "volume_surge",
@@ -1774,21 +1791,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-15T13:43:49Z"
-  },
-  {
-    "label": "RWA",
-    "message": "RWA: turnover 1.9x its recent average",
-    "ratio": 1.87,
-    "sector": "rwa",
-    "type": "volume_surge",
-    "at": "2026-10-15T12:41:42Z"
-  },
-  {
-    "label": "RWA",
-    "message": "RWA: turnover 1.9x its recent average",
-    "ratio": 1.95,
-    "sector": "rwa",
-    "type": "volume_surge",
-    "at": "2026-10-15T11:33:11Z"
   }
 ]
