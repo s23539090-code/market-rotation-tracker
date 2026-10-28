@@ -1,5 +1,14 @@
 [
   {
+    "from": "Weakening",
+    "label": "Layer 2",
+    "message": "Layer 2: Weakening \u2192 Lagging",
+    "sector": "l2",
+    "to": "Lagging",
+    "type": "quadrant_change",
+    "at": "2026-10-28T04:44:23Z"
+  },
+  {
     "from": "Lagging",
     "label": "Layer 2",
     "message": "Layer 2: Lagging \u2192 Weakening",
@@ -1780,14 +1789,5 @@
     "to": "Lagging",
     "type": "quadrant_change",
     "at": "2026-10-15T22:31:14Z"
-  },
-  {
-    "from": "Leading",
-    "label": "DeFi",
-    "message": "DeFi: Leading \u2192 Weakening",
-    "sector": "defi",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-15T21:34:02Z"
   }
 ]
