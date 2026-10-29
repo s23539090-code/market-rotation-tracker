@@ -1,6 +1,15 @@
 [
   {
     "from": "Lagging",
+    "label": "Layer 2",
+    "message": "Layer 2: Lagging \u2192 Weakening",
+    "sector": "l2",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-29T04:46:49Z"
+  },
+  {
+    "from": "Lagging",
     "label": "Gaming",
     "message": "Gaming: Lagging \u2192 Weakening",
     "sector": "gaming",
@@ -1777,14 +1786,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-17T09:28:48Z"
-  },
-  {
-    "from": "Leading",
-    "label": "Layer 2",
-    "message": "Layer 2: Leading \u2192 Weakening",
-    "sector": "l2",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-17T08:29:40Z"
   }
 ]
