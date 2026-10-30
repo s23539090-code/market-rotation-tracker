@@ -1,5 +1,31 @@
 [
   {
+    "from": "Lagging",
+    "label": "RWA",
+    "message": "RWA: Lagging \u2192 Weakening",
+    "sector": "rwa",
+    "to": "Weakening",
+    "type": "quadrant_change",
+    "at": "2026-10-30T23:36:37Z"
+  },
+  {
+    "label": "RWA",
+    "message": "RWA: turnover 2.4x its recent average",
+    "ratio": 2.42,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-30T23:36:37Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Gaming",
+    "message": "Gaming: Lagging \u2192 Improving",
+    "sector": "gaming",
+    "to": "Improving",
+    "type": "quadrant_change",
+    "at": "2026-10-30T23:36:37Z"
+  },
+  {
     "label": "RWA",
     "message": "RWA: turnover 2.7x its recent average",
     "ratio": 2.68,
@@ -1684,32 +1710,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-25T22:25:45Z"
-  },
-  {
-    "from": "Leading",
-    "label": "RWA",
-    "message": "RWA: Leading \u2192 Weakening",
-    "sector": "rwa",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-25T21:28:14Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "DePIN",
-    "message": "DePIN: Weakening \u2192 Leading",
-    "sector": "depin",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-25T21:28:14Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "RWA",
-    "message": "RWA: Weakening \u2192 Leading",
-    "sector": "rwa",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-25T20:27:15Z"
   }
 ]
