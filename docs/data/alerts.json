@@ -1,6 +1,30 @@
 [
   {
     "label": "RWA",
+    "message": "RWA: turnover 6.6x its recent average",
+    "ratio": 6.57,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-30T15:50:21Z"
+  },
+  {
+    "label": "Layer 1",
+    "message": "Layer 1: turnover 2.3x its recent average",
+    "ratio": 2.29,
+    "sector": "l1",
+    "type": "volume_surge",
+    "at": "2026-10-30T15:50:21Z"
+  },
+  {
+    "label": "Gaming",
+    "message": "Gaming: turnover 1.6x its recent average",
+    "ratio": 1.61,
+    "sector": "gaming",
+    "type": "volume_surge",
+    "at": "2026-10-30T15:50:21Z"
+  },
+  {
+    "label": "RWA",
     "message": "RWA: turnover 8.3x its recent average",
     "ratio": 8.27,
     "sector": "rwa",
@@ -1702,32 +1726,5 @@
     "to": "Improving",
     "type": "quadrant_change",
     "at": "2026-10-25T04:31:52Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "Layer 1",
-    "message": "Layer 1: Weakening \u2192 Lagging",
-    "sector": "l1",
-    "to": "Lagging",
-    "type": "quadrant_change",
-    "at": "2026-10-25T04:31:52Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "AI",
-    "message": "AI: Weakening \u2192 Lagging",
-    "sector": "ai",
-    "to": "Lagging",
-    "type": "quadrant_change",
-    "at": "2026-10-25T02:32:15Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "DeFi",
-    "message": "DeFi: Weakening \u2192 Leading",
-    "sector": "defi",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-25T02:32:15Z"
   }
 ]
