@@ -1,6 +1,22 @@
 [
   {
     "label": "RWA",
+    "message": "RWA: turnover 2.7x its recent average",
+    "ratio": 2.68,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-30T22:39:13Z"
+  },
+  {
+    "label": "Layer 1",
+    "message": "Layer 1: turnover 1.6x its recent average",
+    "ratio": 1.57,
+    "sector": "l1",
+    "type": "volume_surge",
+    "at": "2026-10-30T22:39:13Z"
+  },
+  {
+    "label": "RWA",
     "message": "RWA: turnover 2.9x its recent average",
     "ratio": 2.94,
     "sector": "rwa",
@@ -1695,23 +1711,5 @@
     "to": "Leading",
     "type": "quadrant_change",
     "at": "2026-10-25T20:27:15Z"
-  },
-  {
-    "from": "Leading",
-    "label": "DePIN",
-    "message": "DePIN: Leading \u2192 Weakening",
-    "sector": "depin",
-    "to": "Weakening",
-    "type": "quadrant_change",
-    "at": "2026-10-25T20:27:15Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "DePIN",
-    "message": "DePIN: Weakening \u2192 Leading",
-    "sector": "depin",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-25T19:28:02Z"
   }
 ]
