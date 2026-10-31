@@ -1,5 +1,40 @@
 [
   {
+    "from": "Weakening",
+    "label": "RWA",
+    "message": "RWA: Weakening \u2192 Lagging",
+    "sector": "rwa",
+    "to": "Lagging",
+    "type": "quadrant_change",
+    "at": "2026-10-31T00:56:13Z"
+  },
+  {
+    "label": "RWA",
+    "message": "RWA: turnover 2.2x its recent average",
+    "ratio": 2.23,
+    "sector": "rwa",
+    "type": "volume_surge",
+    "at": "2026-10-31T00:56:13Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Memes",
+    "message": "Memes: Lagging \u2192 Improving",
+    "sector": "meme",
+    "to": "Improving",
+    "type": "quadrant_change",
+    "at": "2026-10-31T00:56:13Z"
+  },
+  {
+    "from": "Lagging",
+    "label": "Layer 1",
+    "message": "Layer 1: Lagging \u2192 Improving",
+    "sector": "l1",
+    "to": "Improving",
+    "type": "quadrant_change",
+    "at": "2026-10-31T00:56:13Z"
+  },
+  {
     "from": "Lagging",
     "label": "RWA",
     "message": "RWA: Lagging \u2192 Weakening",
@@ -1674,41 +1709,5 @@
     "to": "Improving",
     "type": "quadrant_change",
     "at": "2026-10-26T00:52:26Z"
-  },
-  {
-    "from": "Improving",
-    "label": "AI",
-    "message": "AI: Improving \u2192 Lagging",
-    "sector": "ai",
-    "to": "Lagging",
-    "type": "quadrant_change",
-    "at": "2026-10-25T23:25:25Z"
-  },
-  {
-    "from": "Lagging",
-    "label": "Layer 1",
-    "message": "Layer 1: Lagging \u2192 Improving",
-    "sector": "l1",
-    "to": "Improving",
-    "type": "quadrant_change",
-    "at": "2026-10-25T23:25:25Z"
-  },
-  {
-    "from": "Lagging",
-    "label": "AI",
-    "message": "AI: Lagging \u2192 Improving",
-    "sector": "ai",
-    "to": "Improving",
-    "type": "quadrant_change",
-    "at": "2026-10-25T22:25:45Z"
-  },
-  {
-    "from": "Weakening",
-    "label": "RWA",
-    "message": "RWA: Weakening \u2192 Leading",
-    "sector": "rwa",
-    "to": "Leading",
-    "type": "quadrant_change",
-    "at": "2026-10-25T22:25:45Z"
   }
 ]
